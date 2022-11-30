@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,16 @@
 </head>
 
 <style>
-section.Topsection{
-    background-color: #808080;
-    text-align: center;
-}
+    section.Topsection {
+        background-color: #808080;
+        text-align: center;
+    }
+
+    section.NewsAggregator {
+        position: static;
+        margin: 25px auto;
+        text-align: right;
+    }
 </style>
 
 <body>
@@ -18,6 +25,13 @@ section.Topsection{
         <h1>Welcome Sir, Time is :<span id="time"></span></h1>
         <script src="Dashelements/time.js"></script>
     </section>
-    
+
+    <section class="NewsAggregator">
+        <iframe width="30%" height="550px" src="Dashelements/News/news.html" name="iframe_a"></iframe>
+        <a href="Dashelements/News/news.html" target="iframe_a"></a>
+    </section>
+
+
 </body>
+
 </html>
