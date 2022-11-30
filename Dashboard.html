@@ -13,10 +13,30 @@
         text-align: center;
     }
 
-    section.NewsAggregator {
+    .weather {
         position: static;
         margin: 25px auto;
-        text-align: right;
+        text-align:left;
+        border-style: none; 
+        border-color: inherit; 
+        border-width: 0px; 
+        height:550px; 
+        width:30%;
+    }
+
+    .NewsAggregator {
+        position: static;
+        margin: 25px auto;
+        text-align:right;
+        border-style: none; 
+        border-color: inherit; 
+        border-width: 0px; 
+        height:550px; 
+        width:30%;
+    }
+
+    body{
+        background-color: #000000;
     }
 </style>
 
@@ -26,12 +46,16 @@
         <script src="Dashelements/time.js"></script>
     </section>
 
-    <section class="NewsAggregator">
-        <iframe width="30%" height="550px" src="Dashelements/News/news.html" name="iframe_a"></iframe>
-        <a href="Dashelements/News/news.html" target="iframe_a"></a>
+    <section class="section">
+        <iframe id="Weather" class="weather"
+            src="Dashelements/Weather/index.html"></iframe>
+            
+        <iframe id="NewsAggregator" class="NewsAggregator"
+            src= "Dashelements/News/news.html"></iframe>
     </section>
 
-
+    
+    
 </body>
 
 </html>
