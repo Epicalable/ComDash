@@ -2,7 +2,7 @@
 A Dashboard Still In Work In Progress.
 
 ## Preview
-![Jardash](https://user-images.githubusercontent.com/69076784/204787635-92ab6189-9a32-416b-a155-540ccc8fa64d.png)
+![jardashui](https://user-images.githubusercontent.com/69076784/210163496-20c7a257-d503-4467-b1fd-6c377560b529.png)
 Current progress of JarDash.
 
 Currently all the iframe elements will be integrated into the main code once planning on the mainframe has been done.
