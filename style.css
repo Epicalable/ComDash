@@ -12,16 +12,16 @@ body {
 }
 
 .card {
-    background: #000000d0;
+    background: rgba(0, 0, 0, 0.816);
     color: white;
     padding: 2em;
-    border-radius: 30px;
+    border-radius: 70px;
     width: 403%;
     max-width: 420px;
     margin: 1em;
-    position: absolute;
-    right: -339px;
-    bottom: 58px;
+    position: fixed;
+    left: -10px;
+    bottom: 328px;
 }
 
 .search {
@@ -105,11 +105,19 @@ body {
 div#newsAccordion {
     background: #000000d0;
     display: list-item;
-    position: absolute;
-    left: 1325%;
+    position: fixed;
+    left: 1080px;
     overflow-y: auto;
     height: 730px;
     width: 500px;
-    border-radius: 30px;
-    bottom: -260px;
+    border-radius: 70px 0px 0px 70px;
+    bottom: 10px;
+}
+
+.footer {
+    position: fixed;
+    text-align: left;
+    color: white;
+    bottom: 4px;
+    width: 50%;
 }
