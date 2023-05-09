@@ -12,7 +12,7 @@ body {
 }
 
 .card {
-    background: rgba(0, 0, 0, 0.816);
+    background: #00000071;
     color: white;
     padding: 2em;
     border-radius: 70px;
@@ -97,7 +97,7 @@ h1.temp {
 }
 
 div#newsAccordion {
-    background: #000000d0;
+    background: #00000071;
     display: list-item;
     position: fixed;
     left: 1080px;
@@ -113,7 +113,7 @@ div#newsAccordion {
     color: white;
     display: flex;
     align-items: baseline;
-    background-color: rgba(0, 0, 0, 0.816);
+    background-color: #00000071;
     width: 100%;
     max-width: 325px;
     border-radius: 70px;
