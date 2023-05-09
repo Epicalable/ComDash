@@ -35,7 +35,7 @@ button {
     border-radius: 50%;
     border: none;
     height: 44px;
-    width: 44px;
+    width: 41px;
     outline: none;
     background: #7c7c7c2b;
     color: white;
@@ -91,12 +91,6 @@ h1.temp {
 
 /*End of Weather Css Code*/
 
-body {
-    padding: 2em;
-    display: flex;
-    position: absolute;
-}
-
 .newscard {
     padding: 1em;
     color: azure;
@@ -112,6 +106,39 @@ div#newsAccordion {
     width: 500px;
     border-radius: 70px 0px 0px 70px;
     bottom: 10px;
+}
+
+.col-md-6.well {
+    padding: 2em;
+    color: white;
+    display: flex;
+    align-items: baseline;
+    background-color: rgba(0, 0, 0, 0.816);
+    width: 100%;
+    max-width: 325px;
+    border-radius: 70px;
+    flex-direction: column;
+    left: 590px;
+    top: 13px;
+    position: absolute;
+}
+
+input#list {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+    width: 224px;
+    height: 36px;
+}
+
+button.pull-right {
+    padding: 0.5em;
 }
 
 .footer {

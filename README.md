@@ -1,8 +1,9 @@
-# ComDash 
-###### An All in one Dashboard for News, Weathers and More
+# ComDash <img width ="30" height="30" src="https://user-images.githubusercontent.com/69076784/236990283-83859a95-c9fa-4d2a-8729-4afb3900789d.png">
+
+###### An All in one Web based Dashboard for News, Weathers and More
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="450" height="250" alt="2023-05-07 (1)" src="https://user-images.githubusercontent.com/69076784/236659511-61bd44c5-0fd1-4be3-a776-f4401e1e4718.png">    
+<img width="450" height="250" alt="2023-05-07 (1)" src="https://user-images.githubusercontent.com/69076784/236990586-7dbd7514-06c2-4af8-8a8b-d35c0a54b230.png">    
 
 (Current Progress of ComDash)
 
@@ -19,9 +20,10 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 Update Highlights:-
-1. Added a '(C)Epicalable 2023' at the bottom of the page.
-2. Made the border-radius from 30px to 70px.
-3. Updated README.md
+1. Added a Task-list to keep track of what tasks do the user have remaining (Still under improvement testing).
+2. New refreshed logo
+4. Resizing and bug fixes.
+4. Update readme.md 
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -31,7 +33,7 @@ WebUI Stability Checks: ✅
 Code-WebUI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 08-May-2023 10:30 HRS
+Last Updated: 09-May-2023 12:05 HRS
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -39,7 +41,7 @@ Keep up-to-date with what's happening on this repository by clicking the 'Star' 
 
 ### What is ComDash
 Coming soon!!!  
-ComDash is An all-in-one Dashboard which is envisioned to have a weather, news, tasks, possible spotify player and more.
+ComDash is An all-in-one Dashboard which is envisioned to have a weather, news, tasks, spotify player (still under fesability studies) and more.
 
 
 ### Running ComDash

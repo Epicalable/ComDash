@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>ComDash</title>
-    <link rel="icon" type="image/x-icon" href="./icon/ComDash.jpeg">
+    <link rel="icon" type="image/x-icon" href="./icon/ComDash.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -40,6 +40,26 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <div class="col-md-6 well">
+        <div class="form-inline">
+            <label class="label">My Tasks (Limit: 5 tasks)</label>
+            <br />
+            <input type="text" id="list" class="form-control" placeholder="Add tasks here" />
+            <button class="btn btn-success" onclick="addList()"><svg stroke="currentColor" fill="currentColor"
+                    stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <defs></defs>
+                    <path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298"></path>
+                    <path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group" id="result" style="word-wrap:break-word;" />
+            </ul>
+        </div>
+    </div>
 
     <div class="footer">(C)Epicalable 2023</div>
 

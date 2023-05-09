@@ -50,11 +50,8 @@ weather.fetchWeather("Singapore");
 
 
 
-
-
-
 // initialze of the variables 
-let country = "sg"
+let country = "us"
 let apiKey = "2c925d05bbe34d23a7fb4f425749d9b9"
 
 // grab the news container
@@ -91,3 +88,40 @@ xhr.onload = function () {
 }
 
 xhr.send()
+
+
+var lists = []
+
+function addList() {
+    var list = document.getElementById('list');
+    var val = list.value;
+    if (val == "") {
+        alert("Please enter something first!");
+    } else {
+        lists.push(val.trim());
+        list.value = '';
+        displayList();
+    }
+}
+
+function displayList() {
+    var data = '';
+    if (lists.length < 6) {
+        for (var i = 0; i < lists.length; i++) {
+            data += "<li class='list-group-item'><button class='pull-right' onclick='removeList(" + i + ")'>"+"<svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 24 24' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path></svg>"+"<span class='glyphicon glyphicon-trash' ></span ></button > " + lists[i] + "</li > ";
+        }
+    }
+    else {
+        alert("Task Limit is 5 please refresh the page!");
+    }
+
+    document.getElementById('result').innerHTML = data;
+}
+
+function removeList(list) {
+    lists.splice(list, 1);
+    displayList();
+}
+
+
+
