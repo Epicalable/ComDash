@@ -6,7 +6,7 @@
 
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="500" alt="Comdash" src="https://user-images.githubusercontent.com/69076784/237059666-2098c8bc-df08-4482-96c9-e70d04a12019.png">
+<img width="450" src="https://github.com/Epicalable/ComDash/assets/69076784/0d77e5ce-424f-435c-92b7-5c4997f175d2">
 
 (Current Progress of ComDash)
 
@@ -24,9 +24,12 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 Updates:-
-1. Update readme.md 
+1. Added a new card to show a calander with today's date.
+2. (C)Epicalable 2023 is now a link to our Official website.
+3. Font and Card placing adjustments
+4. Updated readme.md license
 
-Last Updated: 09-May-2023 19:10 HRS
+Last Updated: 11-May-2023 16:45 HRS
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -53,7 +56,7 @@ Both websites once registered will provide you an API key, Users should then cop
 
 
 ## Issues
-If you run into any issues while operating or have any suggestions or features, please feel free to drop by our [issues](https://github.com/Epicalable/ComDash/issues) section and open a issue and we'll respond within 2 working days.
+As this project is still in development and testing stage, if you run into any issues while operating or have any suggestions or features, please feel free to drop by our [issues](https://github.com/Epicalable/ComDash/issues) section and open a issue and we'll respond within 2 working days.
 
 
 ## License
@@ -61,7 +64,9 @@ If you run into any issues while operating or have any suggestions or features, 
 
 IMPORTANT NOTE: Any User who are willing to Share or Re-Distribute ComDash are kindly advised to:
 
-1. A link to this repository from the user's 'Modified program' README file. 
+1. A reference to us by keeping a "(C) Epicalable" text in the 'Modified program'.
+
+2. A link to this repository from the user's 'Modified program' README file. 
 
 This will be helpful for us as users will know it's original source and about our startup.
 Please also refer to LICENSE file for clarifications.  

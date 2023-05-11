@@ -9,10 +9,11 @@ body {
     background: #222;
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
     font-size: 120%;
+    font-family: var(--font-family);
 }
 
 .card {
-    background: #00000071;
+    background: #000000d0;
     color: white;
     padding: 2em;
     border-radius: 70px;
@@ -21,7 +22,7 @@ body {
     margin: 1em;
     position: fixed;
     left: -10px;
-    bottom: 328px;
+    bottom: 350px;
 }
 
 .search {
@@ -97,7 +98,7 @@ h1.temp {
 }
 
 div#newsAccordion {
-    background: #00000071;
+    background: #000000d0;
     display: list-item;
     position: fixed;
     left: 1080px;
@@ -113,7 +114,7 @@ div#newsAccordion {
     color: white;
     display: flex;
     align-items: baseline;
-    background-color: #00000071;
+    background-color: #000000d0;
     width: 100%;
     max-width: 325px;
     border-radius: 70px;
@@ -141,10 +142,137 @@ button.pull-right {
     padding: 0.5em;
 }
 
+.calendar {
+    height: max-content;
+    width: max-content;
+    background-color: #000000d0;
+    color: white;
+    border-radius: 70px;
+    padding: 2em;
+    position: relative;
+    overflow: hidden;
+    top: 354px;
+    left: 9px;
+    width: 497px;
+    height: 324px;
+    box-sizing: border-box;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f8fbff;
+    padding: 10px;
+}
+
+.calendar-week-day {
+    height: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+}
+
+.calendar-week-day div {
+    display: grid;
+    place-items: center;
+    color: #79788c;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    color: #f8fbff;
+}
+
+.calendar-days div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+}
+
+.calendar-days div:hover span {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.calendar-days div span:nth-child(1),
+.calendar-days div span:nth-child(3) {
+    height: 0;
+}
+
+.calendar-days div:hover span:nth-child(1),
+.calendar-days div:hover span:nth-child(3) {
+    height: 100%;
+}
+
+.calendar-days div span:nth-child(1) {
+    bottom: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+
+.calendar-days div span:nth-child(2),
+.calendar-days div span:nth-child(4) {
+    width: 0;
+    height: 2px;
+}
+
+.calendar-days div:hover span:nth-child(2),
+.calendar-days div:hover span:nth-child(4) {
+    width: 100%;
+}
+
+.calendar-days div span:nth-child(2) {
+    top: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+    background-color: #545458;
+    color: #f8fbff;
+    border-radius: 50%;
+}
+
+.calendar-days div.curr-date span {
+    display: none;
+}
+
 .footer {
     position: fixed;
     text-align: left;
     color: white;
     bottom: 4px;
+    left: 9px;
     width: 50%;
+}
+
+a:link {
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #545458;
 }
