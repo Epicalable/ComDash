@@ -6,7 +6,7 @@
 
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="450" src="https://github.com/Epicalable/ComDash/assets/69076784/0d77e5ce-424f-435c-92b7-5c4997f175d2">
+<img width="450" src="https://github.com/Epicalable/ComDash/assets/69076784/c08f5433-aa3c-4a4b-9b78-46052dab7813">
 
 (Current Progress of ComDash)
 
@@ -24,12 +24,12 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 Updates:-
-1. Added a new card to show a calander with today's date.
-2. (C)Epicalable 2023 is now a link to our Official website.
-3. Font and Card placing adjustments
-4. Updated readme.md license
+1. Added a new spotify card for you to listen to music.
+   1a. We will add a menu to help change the songs in the future but for now you'll have to edit the song in the html file.
+2. Font and Card placing adjustments
+3. Updated readme.md license
 
-Last Updated: 11-May-2023 16:45 HRS
+Last Updated: 13-May-2023 15:10 HRS
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

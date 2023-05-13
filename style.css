@@ -116,11 +116,12 @@ div#newsAccordion {
     align-items: baseline;
     background-color: #000000d0;
     width: 100%;
-    max-width: 325px;
+    max-height: 357px;
+    max-width: 423px;
     border-radius: 70px;
     flex-direction: column;
-    left: 590px;
-    top: 13px;
+    left: 542px;
+    top: 308px;
     position: absolute;
 }
 
@@ -133,8 +134,7 @@ input#list {
     color: white;
     font-family: inherit;
     font-size: 105%;
-    width: calc(100% - 100px);
-    width: 224px;
+    width: 323px;
     height: 36px;
 }
 
@@ -254,6 +254,12 @@ button.pull-right {
 
 .calendar-days div.curr-date span {
     display: none;
+}
+
+.spotify-card {
+    position: absolute;
+    top: 13px;
+    left: 542px;
 }
 
 .footer {
