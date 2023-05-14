@@ -6,9 +6,9 @@
 
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="450" src="https://github.com/Epicalable/ComDash/assets/69076784/c08f5433-aa3c-4a4b-9b78-46052dab7813">
+<img width="450" src="https://github.com/Epicalable/ComDash/assets/69076784/891da24e-6b44-4702-aa36-e49e9e4e73b8">
 
-(Current Progress of ComDash)
+(Current Progress of ComDash Locally hosted on my PC.)
 
 
 ## Table Of Contents
@@ -24,12 +24,10 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 Updates:-
-1. Added a new spotify card for you to listen to music.
-   1a. We will add a menu to help change the songs in the future but for now you'll have to edit the song in the html file.
-2. Font and Card placing adjustments
-3. Updated readme.md license
+1. Font and Card transparency adjustments
+2. Update readme.md
 
-Last Updated: 13-May-2023 15:10 HRS
+Last Updated: 14-May-2023 15:45 HRS
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
