@@ -51,7 +51,7 @@ weather.fetchWeather("Singapore");
 
 
 // initialze of the variables 
-let country = "us"
+let country = "sg"
 let apiKey = "2c925d05bbe34d23a7fb4f425749d9b9"
 
 // grab the news container
@@ -86,12 +86,11 @@ xhr.onload = function () {
         console.log("Some error occured")
     }
 }
-
 xhr.send()
 
 
-var lists = []
 
+var lists = []
 function addList() {
     var list = document.getElementById('list');
     var val = list.value;
@@ -126,13 +125,11 @@ function removeList(list) {
 
 
 let calendar = document.querySelector('.calendar')
-
 const month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 isLeapYear = (year) => {
     return (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year % 400 === 0)
 }
-
 getFebDays = (year) => {
     return isLeapYear(year) ? 29 : 28
 }
@@ -176,14 +173,28 @@ generateCalendar = (month, year) => {
 }
 
 let month_picker = calendar.querySelector('#month-picker')
-
 month_picker.onclick = () => {
     month_list.classList.add('show')
 }
 
 let currDate = new Date()
-
 let curr_month = { value: currDate.getMonth() }
 let curr_year = { value: currDate.getFullYear() }
 
 generateCalendar(curr_month.value, curr_year.value)
+
+
+
+function getGoogle() {
+    var term, myWindow;
+    term = document.getElementById('searchTerm').value;
+    myWindow = window.open("http://www.google.com/search?q=" + term, "_self")
+}
+
+function getGithub() {
+    myWindow = window.open("https://github.com/Epicalable", "_self")
+}
+
+function getYoutube() {
+    myWindow = window.open("https://www.youtube.com/", "_self")
+}

@@ -38,7 +38,7 @@ button {
     height: 44px;
     width: 41px;
     outline: none;
-    background: #7c7c7c2b;
+    background: #0000002b;
     color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -49,7 +49,7 @@ input.search-bar {
     outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
-    background: #7c7c7c2b;
+    background: #1211112b;
     color: white;
     font-family: inherit;
     font-size: 105%;
@@ -257,10 +257,19 @@ button.pull-right {
     display: none;
 }
 
-.spotify-card {
-    position: absolute;
+.Google {
+    background-color: #0000007d;
+    padding: 2em;
+    border-radius: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     top: 13px;
-    left: 542px;
+    left: 611px;
+    position: absolute;
+    height: 205px;
+    max-height: 100%;
+    width: 280px;
 }
 
 .footer {

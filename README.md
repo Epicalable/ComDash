@@ -6,9 +6,9 @@
 
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="450" src="https://github.com/Epicalable/ComDash/assets/69076784/891da24e-6b44-4702-aa36-e49e9e4e73b8">
+<img width="450" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/d570ece6-f60d-41c4-92f3-89051a62b0e8">
 
-(Current Progress of ComDash Locally hosted on my PC.)
+(Current Progress of ComDash Locally hosted on my PC)
 
 
 ## Table Of Contents
@@ -24,16 +24,16 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 Updates:-
-1. Font and Card transparency adjustments
+1. New Card with links to Important Websites for Programmers
 2. Update readme.md
 
-Last Updated: 14-May-2023 15:45 HRS
+Last Updated: 14-May-2023 13:35 HRS
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
 
 
-## Introduction to ComDash
+## Introducing ComDash
 Last year our startup announced Comdash: an all-in-one web-based Dashboard to get essential day-to-day information for users built using Html5 for frontend structure, CSS3 for webpage styling and JavaScript for background infomation retreival processes.  
 So what does ComDash do? Well ComDash can retrieve news, weather, tasks and some more cool features coming soon.
 
