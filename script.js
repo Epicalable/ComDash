@@ -17,27 +17,21 @@ let weather = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         document.querySelector(".city").innerText = "Weather in " + name;
-        document.querySelector(".icon").src =
-            "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°C";
-        document.querySelector(".humidity").innerText =
-            "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText =
-            "Wind speed: " + speed + " km/h";
+        document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
+        document.querySelector(".wind").innerText = "Wind speed: " + speed + " km/h";
         document.querySelector(".weather").classList.remove("loading");
-        document.body.style.backgroundImage =
-            "url('https://source.unsplash.com/1600x900/?" + name + "')";
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
     search: function () {
         this.fetchWeather(document.querySelector(".search-bar").value);
     },
 };
-
 document.querySelector(".search button").addEventListener("click", function () {
     weather.search();
 });
-
 document
     .querySelector(".search-bar")
     .addEventListener("keyup", function (event) {
@@ -45,7 +39,6 @@ document
             weather.search();
         }
     });
-
 weather.fetchWeather("Singapore");
 
 
@@ -53,13 +46,10 @@ weather.fetchWeather("Singapore");
 // initialze of the variables 
 let country = "sg"
 let apiKey = "2c925d05bbe34d23a7fb4f425749d9b9"
-
 // grab the news container
 let newsAccordion = document.getElementById('newsAccordion');
-
 // create the get request
 const xhr = new XMLHttpRequest();
-
 // use for the post request 
 xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`, true);
 // when response is ready
@@ -83,7 +73,7 @@ xhr.onload = function () {
         newsAccordion.innerHTML = newsHtml;
     }
     else {
-        console.log("Some error occured")
+        alert("Some error occured while getting news")
     }
 }
 xhr.send()
@@ -102,7 +92,6 @@ function addList() {
         displayList();
     }
 }
-
 function displayList() {
     var data = '';
     if (lists.length < 6) {
@@ -116,7 +105,6 @@ function displayList() {
 
     document.getElementById('result').innerHTML = data;
 }
-
 function removeList(list) {
     lists.splice(list, 1);
     displayList();
@@ -126,35 +114,25 @@ function removeList(list) {
 
 let calendar = document.querySelector('.calendar')
 const month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-
 isLeapYear = (year) => {
     return (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year % 400 === 0)
 }
 getFebDays = (year) => {
     return isLeapYear(year) ? 29 : 28
 }
-
 generateCalendar = (month, year) => {
-
     let calendar_days = calendar.querySelector('.calendar-days')
     let calendar_header_year = calendar.querySelector('#year')
-
     let days_of_month = [31, getFebDays(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-
     calendar_days.innerHTML = ''
-
     let currDate = new Date()
     if (!month) month = currDate.getMonth()
     if (!year) year = currDate.getFullYear()
-
     let curr_month = `${month_names[month]}`
     month_picker.innerHTML = curr_month
     calendar_header_year.innerHTML = year
-
     // get first day of month
-
     let first_day = new Date(year, month, 1)
-
     for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
         let day = document.createElement('div')
         if (i >= first_day.getDay()) {
@@ -171,16 +149,13 @@ generateCalendar = (month, year) => {
         calendar_days.appendChild(day)
     }
 }
-
 let month_picker = calendar.querySelector('#month-picker')
 month_picker.onclick = () => {
     month_list.classList.add('show')
 }
-
 let currDate = new Date()
 let curr_month = { value: currDate.getMonth() }
 let curr_year = { value: currDate.getFullYear() }
-
 generateCalendar(curr_month.value, curr_year.value)
 
 
@@ -190,11 +165,9 @@ function getGoogle() {
     term = document.getElementById('searchTerm').value;
     myWindow = window.open("http://www.google.com/search?q=" + term, "_self")
 }
-
 function getGithub() {
     myWindow = window.open("https://github.com/Epicalable", "_self")
 }
-
 function getYoutube() {
     myWindow = window.open("https://www.youtube.com/", "_self")
 }

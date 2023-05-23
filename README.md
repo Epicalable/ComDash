@@ -2,11 +2,11 @@
 
 ###### An All in one Web based Dashboard for News, Weathers and More
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Epicalable/JARVIS-GUI) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Epicalable/JARVIS-GUI) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Epicalable/JARVIS-GUI/issues)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Epicalable/ComDash) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Epicalable/ComDash) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Epicalable/ComDash/issues)
 
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="450" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/d570ece6-f60d-41c4-92f3-89051a62b0e8">
+<img width="450" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/db917ec9-5937-4fc6-874d-237def5cd5ef">
 
 (Current Progress of ComDash Locally hosted on my PC)
 
@@ -24,10 +24,10 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 Updates:-
-1. New Card with links to Important Websites for Programmers
+1. Minor Code Cleanup, Bug Fixes and Improvements.
 2. Update readme.md
 
-Last Updated: 14-May-2023 13:35 HRS
+Last Updated: 23-May-2023 15:32 HRS(Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -42,6 +42,7 @@ ComDash is currently still under development so stay tuned to latest updates and
 
 ## Running ComDash
 To run ComDash all you'll need to do is to open ComDash.html file in your browser.
+
 
 ## What Are The APIs should I subscribe to?
 Upon opening, by default you can reteive news and weather using pre-existing APIs but if you want it personalised then it is best to activate the API. To do that you will need to head to:
