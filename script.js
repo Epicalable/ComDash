@@ -43,18 +43,18 @@ weather.fetchWeather("Singapore");
 
 
 
-// initialze of the variables 
-let country = "sg"
-let apiKey = "2c925d05bbe34d23a7fb4f425749d9b9"
-// grab the news container
-let newsAccordion = document.getElementById('newsAccordion');
-// create the get request
-const xhr = new XMLHttpRequest();
-// use for the post request 
-xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`, true);
-// when response is ready
-xhr.onload = function () {
-    if (this.status === 200) {
+function getNews() {
+    // initialze of the variables 
+    let apiKey = "2c925d05bbe34d23a7fb4f425749d9b9"
+    // grab the news container
+    let newsAccordion = document.getElementById('newsAccordion');
+    // create the get request
+    const xhr = new XMLHttpRequest();
+    let term = document.getElementById('searchTerm').value;
+    // use for the post request 
+    xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${term}&apiKey=${apiKey}`, true)
+    // when response is ready
+    xhr.onload = function () {
         let json = JSON.parse(this.responseText);
         let articles = json.articles;
         console.log(articles);
@@ -72,11 +72,9 @@ xhr.onload = function () {
         });
         newsAccordion.innerHTML = newsHtml;
     }
-    else {
-        alert("Some error occured while getting news")
-    }
+    xhr.send()
 }
-xhr.send()
+
 
 
 
@@ -163,11 +161,15 @@ generateCalendar(curr_month.value, curr_year.value)
 function getGoogle() {
     var term, myWindow;
     term = document.getElementById('searchTerm').value;
-    myWindow = window.open("http://www.google.com/search?q=" + term, "_self")
+    myWindow = window.open("http://www.google.com/search?q=" + term, "_blank")
 }
 function getGithub() {
-    myWindow = window.open("https://github.com/Epicalable", "_self")
+    myWindow = window.open("https://github.com/Epicalable", "_blank")
 }
 function getYoutube() {
-    myWindow = window.open("https://www.youtube.com/", "_self")
+    myWindow = window.open("https://www.youtube.com/", "_blank")
+}
+function NewsApiHelp() {
+    var myWindow;
+    myWindow = window.open("https://newsapi.org/docs/endpoints/top-headlines", "_blank")
 }

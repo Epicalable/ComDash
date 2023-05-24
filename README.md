@@ -6,7 +6,7 @@
 
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="450" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/db917ec9-5937-4fc6-874d-237def5cd5ef">
+<img width="450" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/8258784f-a5d5-4d56-8f30-52905989a17b">
 
 (Current Progress of ComDash Locally hosted on my PC)
 
@@ -24,10 +24,11 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 Updates:-
-1. Minor Code Cleanup, Bug Fixes and Improvements.
-2. Update readme.md
+1. Added a Search-bar and Help button on top of the newscard to get news on different countries.
+2. Minor Code Cleanup, Bug Fixes and Improvements.
+3. Update readme.md
 
-Last Updated: 23-May-2023 15:32 HRS(Singapore Standard Time)
+Last Updated: 23-May-2023 23:15HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

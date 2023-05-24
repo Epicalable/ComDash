@@ -1,134 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
-    <title>ComDash</title>
-    <link rel="icon" type="image/x-icon" href="./icon/ComDash.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
-</head>
-
-<body>
-
-    <div class="calendar">
-        <div class="calendar-header">
-            <span class="month-picker" id="month-picker">February</span>
-            <div class="year-picker">
-                <span id="year">2022</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+        <title>ComDash</title>
+        <link rel="icon" type="image/x-icon" href="./icon/ComDash.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+    
+    <body>
+    
+        <div class="calendar">
+            <div class="calendar-header">
+                <span class="month-picker" id="month-picker">February</span>
+                <div class="year-picker">
+                    <span id="year">2022</span>
+                </div>
+            </div>
+            <div class="calendar-body">
+                <div class="calendar-week-day">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-days"></div>
+            </div>
+            <div class="month-list"></div>
+        </div>
+    
+    
+        <div class="weathercard">
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Enter Your City To Get Weather">
+                <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                        height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="weather loading">
+                <h2 class="city">Weather in Singapore</h2>
+                <h1 class="temp">31°C</h1>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                    <div class="description">Cloudy</div>
+                </div>
+                <div class="humidity">Humidity: 60%</div>
+                <div class="wind">Wind speed: 6.2 km/h</div>
             </div>
         </div>
-        <div class="calendar-body">
-            <div class="calendar-week-day">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
+    
+    
+        <div class="testcard">
+            <div class="newssearch">
+                <form>
+                    <input type="text" class="news-search-bar" id="searchTerm" placeholder="Type Country Abbr Here Ex.SG, US" />
+                    <button type="button" onclick="getNews()">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.875,3H4.125C2.953,3,2,3.897,2,5v14c0,1.103,0.953,2,2.125,2h15.75C21.047,21,22,20.103,22,19V5 C22,3.897,21.047,
+                                3,19.875,3z M19.875,19H4.125c-0.057,0-0.096-0.016-0.113-0.016c-0.007,0-0.011,0.002-0.012,0.008L3.988,5.046 
+                                C3.995,5.036,4.04,5,4.125,5h15.75C19.954,5.001,19.997,5.028,20,5.008l0.012,13.946C20.005,18.964,19.96,19,19.875,19z">
+                            </path>
+                            <path d="M6 7H12V13H6zM13 15L6 15 6 17 13 17 14 17 18 17 18 15 14 15zM14 11H18V13H14zM14 7H18V9H14z"></path>
+                        </svg>
+                    </button>
+                </form>
+                <button type="button" onclick="NewsApiHelp()">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 6C9.831 6 8.066 7.765 8.066 9.934h2C10.066 8.867 10.934 8 12 8s1.934.867 1.934 1.934c0 .598-.481 1.032-1.216 1.626-.255.207-.496.404-.691.599C11.029 13.156 11 14.215 11 14.333V15h2l-.001-.633c.001-.016.033-.386.441-.793.15-.15.339-.3.535-.458.779-.631 1.958-1.584 1.958-3.182C15.934 7.765 14.169 6 12 6zM11 16H13V18H11z">
+                        </path>
+                        <path
+                            d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8s3.589-8,8-8 s8,3.589,8,8S16.411,20,12,20z">
+                        </path>
+                    </svg>
+                </button>
             </div>
-            <div class="calendar-days"></div>
+            <div class="newsscard" id="newsAccordion">
+            </div>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
         </div>
-        <div class="month-list"></div>
-    </div>
-
-
-    <div class="weathercard">
-        <div class="search">
-            <input type="text" class="search-bar" placeholder="Enter Your City To Get Weather">
-            <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                    height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+    
+    
+        <div class="taskcard">
+            <div class="form-inline">
+                <label class="label">Type your tasks below (Limit: 5 tasks)</label>
+                <br />
+                <input type="text" id="list" class="form-control" placeholder="Enter Your Tasks Here" />
+                <button class="btn btn-success" onclick="addList()"><svg stroke="currentColor" fill="currentColor"
+                        stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <defs></defs>
+                        <path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298"></path>
+                        <path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group" id="result" style="word-wrap:break-word;">
+                </ul>
+            </div>
+        </div>
+    
+    
+        <div class="linkscard">
+            <div>
+                <form>
+                    <input type="text" class="search-bar" id="searchTerm" placeholder="Search Google"/>
+                    <button type="button" onclick="getGoogle()">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px" viewBox="0 0 48 48"
+                            enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
+                        	c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24
+                        	c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                            <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657
+                        	C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path>
+                            <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36
+                        	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path>
+                            <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
+                        	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                            </path>
+                        </svg>
+                    </button>
+                </form>
+            </section>
+            <button type="button" onclick="getGithub()">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
+                    </path>
+                </svg>
+            </button>
+            <button type="button" onclick="getYoutube()">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z">
                     </path>
                 </svg>
             </button>
         </div>
-        <div class="weather loading">
-            <h2 class="city">Weather in Singapore</h2>
-            <h1 class="temp">31°C</h1>
-            <div class="flex">
-                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-                <div class="description">Cloudy</div>
-            </div>
-            <div class="humidity">Humidity: 60%</div>
-            <div class="wind">Wind speed: 6.2 km/h</div>
-        </div>
-    </div>
-
-
-    <div class="newsscard" id="newsAccordion"></div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-
-    <div class="taskcard">
-        <div class="form-inline">
-            <label class="label">Type your tasks below (Limit: 5 tasks)</label>
-            <br />
-            <input type="text" id="list" class="form-control" placeholder="Enter Your Tasks Here" />
-            <button class="btn btn-success" onclick="addList()"><svg stroke="currentColor" fill="currentColor"
-                    stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em"
-                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <defs></defs>
-                    <path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298"></path>
-                    <path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299"></path>
-                </svg>
-            </button>
-        </div>
-        <div class="col-md-6">
-            <ul class="list-group" id="result" style="word-wrap:break-word;" />
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="linkscard">
-        <div>
-            <form>
-                <input type="text" class="search-bar" id="searchTerm" placeholder="Search Google"/>
-                <button type="button" onclick="getGoogle()">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px" viewBox="0 0 48 48"
-                        enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
-                    	c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24
-                    	c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path>
-                        <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657
-                    	C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path>
-                        <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36
-                    	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path>
-                        <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
-                    	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
-                        </path>
-                    </svg>
-                </button>
-            </form>
-        </section>
-        <button type="button" onclick="getGithub()">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
-            xmlns="http://www.w3.org/2000/svg">
-                <path
-                d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
-                </path>
-            </svg>
-        </button>
-        <button type="button" onclick="getYoutube()">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z">
-                </path>
-            </svg>
-        </button>
-    </div>
-
     
-    <div class="footer"><a href="https://epicalable.github.io/epicalable.html" target="_blank">ComDash (C)Epicalable 2023</a></div>
-
-</body>
+        
+        <div class="footer"><a href="https://epicalable.github.io/epicalable.html" target="_blank">ComDash (C)Epicalable 2023</a></div>
+    
+    </body>
 
 </html>
