@@ -1,12 +1,12 @@
 # ComDash <img width ="30" height="30" src="https://user-images.githubusercontent.com/69076784/236990283-83859a95-c9fa-4d2a-8729-4afb3900789d.png">
 
-###### An All in one Web based Dashboard for News, Weathers and More
+###### An All in one Web based Dashboard for News, Weathers and More...
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Epicalable/ComDash) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Epicalable/ComDash) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Epicalable/ComDash/issues)
 
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="450" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/8258784f-a5d5-4d56-8f30-52905989a17b">
+<img width="450" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/9168116f-8730-45b3-acda-0161788406a4">
 
 (Current Progress of ComDash Locally hosted on my PC)
 
@@ -15,7 +15,7 @@ Note: This project is still In developement and the current product shown might 
 - [WHAT'S NEW?](#whats-new)
 - [Introduction to ComDash](#introduction-to-comdash)
 - [Running ComDash](#running-comdash)
-- [What Are The APIs should I subscribe to?](#what-are-the-apis-should-i-subscribe-to)
+- [What APIs should I subscribe to?](#what-apis-should-i-subscribe-to)
 - [Issues](#issues)
 - [License](#license)
 
@@ -24,12 +24,11 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 ComDash Updates In This Commit:-
-1. Added a Time function on Weather Card.
-2. Minor Card elements adjustments.
-3. Minor Code Cleanup, Bug Fixes and Improvements.
-4. Update readme.md
+1. TaskCard now has a scrollbar. Hence, we are removing the 5 tasks limit!!!
+2. Minor Card elements adjustments and additions.
+3. Update readme.md
 
-Last Updated: 25-May-2023 14:00HRS (Singapore Standard Time)
+Last Updated: 25-May-2023 18:55HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -46,12 +45,14 @@ ComDash is currently still under development so stay tuned to latest updates and
 To run ComDash all you'll need to do is to open ComDash.html file in your browser.
 
 
-## What Are The APIs should I subscribe to?
-Upon opening, by default you can reteive news and weather using pre-existing APIs but if you want it personalised then it is best to activate the API. To do that you will need to head to:
+## What APIs should I subscribe to?
+Upon opening, by default you can reteive news and weather using pre-existing APIs but if you want it to be personalised then it is best to activate an API. To do that you will need to head to:
 
-1. https://newsapi.org/ : For Live News, Morning Briefings and News Headlines.
+1. https://newsapi.org/ : For ComDash To Get Current News Headlines For You And Display In NewsCard.  
+<img width="100" alt="NewsCard" src="https://github.com/Epicalable/ComDash/assets/69076784/41343f3f-af0a-4ece-ba52-61e432700150">
 
-2. https://openweathermap.org/ : For current Weather information.
+2. https://openweathermap.org/ : For ComDash To Get current Weather information For You And Display In WeatherCard .  
+<img width="100" alt="WeatherCard" src="https://github.com/Epicalable/ComDash/assets/69076784/d8c5947d-956b-47da-9335-4fc85b308cfb">
 
 Both websites once registered will provide you an API key, Users should then copy the API key and paste it in Javascript code.
 

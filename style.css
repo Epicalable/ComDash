@@ -52,7 +52,7 @@ input.search-bar {
     color: white;
     font-family: inherit;
     font-size: 80%;
-    width: calc(100% - 100px);
+    width: 273px;
 }
 button:hover {
     background: #7c7c7c6b;
@@ -86,11 +86,30 @@ h1.temp {
 
 
 /*Start of NewsCard Css Code*/
+.headlinescard {
+    background: #000000b9;
+    display: list-item;
+    align-items: baseline;
+    position: absolute;
+    overflow-y: auto;
+    height: 728px;
+    width: 500px;
+    border-radius: 70px 50px 50px 70px;
+    bottom: 10px;
+    right: 17px;
+}
+label.newslabel {
+    color: white;
+    position: relative;
+    font-family: inherit;
+    font-size: 100%;
+    left: 185px;
+}
 .newssearch{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 45px;
     width: 500px;
 }
 input.news-search-bar {
@@ -104,29 +123,18 @@ input.news-search-bar {
     font-size: 80%;
     width: 240px;
 }
-.newscard {
-    padding: 1em;
-    color: azure;
-}
-.testcard {
-    background: #000000b9;
-    display: list-item;
-    position: absolute;
-    overflow-y: auto;
-    height: 728px;
-    width: 500px;
-    border-radius: 70px 50px 50px 70px;
-    bottom: 10px;
-    right: 17px;
-}
 .newsscard {
     background: #00000000;
     display: list-item;
     position: absolute;
     overflow-y: auto;
-    height: 675px;
+    height: 660px;
     width: 500px;
     bottom: 0px;
+}
+.newscard {
+    padding: 1em;
+    color: azure;
 }
 /*End of NewsCard Css Code*/
 
@@ -162,6 +170,10 @@ input#list {
 }
 button.pull-right {
     padding: 0.5em;
+}
+.col-md-6 {
+    overflow-y: auto;
+    width: -webkit-fill-available;
 }
 /*End of TaskCard Css Code*/
 
@@ -282,6 +294,17 @@ button.pull-right {
     height: 205px;
     max-height: 100%;
     width: 280px;
+}
+input.googlesearch-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #1211112b;
+    color: white;
+    font-family: inherit;
+    font-size: 80%;
+    width: calc(100% - 100px);
 }
 /*End of GoogleCard Css Code*/
 

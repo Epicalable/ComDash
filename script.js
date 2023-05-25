@@ -41,6 +41,10 @@ document
         }
     });
 weather.fetchWeather("Singapore");
+function OpenWeatherHelp() {
+    var myWindow;
+    myWindow = window.open("https://openweathermap.org/weather-conditions#Icon-list", "_blank")
+}
 /*End of WeatherCard JS Code*/
 
 
@@ -98,13 +102,8 @@ function addList() {
 }
 function displayList() {
     var data = '';
-    if (lists.length < 6) {
-        for (var i = 0; i < lists.length; i++) {
-            data += "<li class='list-group-item'><button class='pull-right' onclick='removeList(" + i + ")'>"+"<svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 24 24' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path></svg>"+"<span class='glyphicon glyphicon-trash' ></span ></button > " + lists[i] + "</li > ";
-        }
-    }
-    else {
-        alert("Task Limit is 5 please refresh the page!");
+    for (var i = 0; i < lists.length; i++) {
+        data += "<li class='list-group-item'><button class='pull-right' onclick='removeList(" + i + ")'>" + "<svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 24 24' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path></svg>" + "<span class='glyphicon glyphicon-trash' ></span ></button > " + lists[i] + "</li > ";
     }
 
     document.getElementById('result').innerHTML = data;
@@ -167,7 +166,6 @@ function display_c() {
     var refresh = 1000; // Refresh rate in milli seconds
     mytime = setTimeout('display_ct()', refresh)
 }
-
 function display_ct() {
     var CDate = new Date()
     NewDate = CDate.toLocaleTimeString();
