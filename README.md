@@ -23,12 +23,13 @@ Note: This project is still In developement and the current product shown might 
 ## WHAT'S NEW?
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
-Updates:-
-1. Added a Search-bar and Help button on top of the newscard to get news on different countries.
-2. Minor Code Cleanup, Bug Fixes and Improvements.
-3. Update readme.md
+ComDash Updates In This Commit:-
+1. Added a Time function on Weather Card.
+2. Minor Card elements adjustments.
+3. Minor Code Cleanup, Bug Fixes and Improvements.
+4. Update readme.md
 
-Last Updated: 23-May-2023 23:15HRS (Singapore Standard Time)
+Last Updated: 25-May-2023 14:00HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

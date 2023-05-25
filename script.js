@@ -1,3 +1,4 @@
+/*Start of WeatherCard JS Code*/
 let weather = {
     apiKey: "b190a0605344cc4f3af08d0dd473dd25",
     fetchWeather: function (city) {
@@ -40,9 +41,10 @@ document
         }
     });
 weather.fetchWeather("Singapore");
+/*End of WeatherCard JS Code*/
 
 
-
+/*Start of NewsCard JS Code*/
 function getNews() {
     // initialze of the variables 
     let apiKey = "2c925d05bbe34d23a7fb4f425749d9b9"
@@ -74,10 +76,14 @@ function getNews() {
     }
     xhr.send()
 }
+function NewsApiHelp() {
+    var myWindow;
+    myWindow = window.open("https://newsapi.org/docs/endpoints/top-headlines", "_blank")
+}
+/*End of NewsCard JS Code*/
 
 
-
-
+/*Start of TasksCard JS Code*/
 var lists = []
 function addList() {
     var list = document.getElementById('list');
@@ -107,9 +113,10 @@ function removeList(list) {
     lists.splice(list, 1);
     displayList();
 }
+/*End of TasksCard JS Code*/
 
 
-
+/*Start of CalanderCard JS Code*/
 let calendar = document.querySelector('.calendar')
 const month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 isLeapYear = (year) => {
@@ -156,8 +163,21 @@ let curr_month = { value: currDate.getMonth() }
 let curr_year = { value: currDate.getFullYear() }
 generateCalendar(curr_month.value, curr_year.value)
 
+function display_c() {
+    var refresh = 1000; // Refresh rate in milli seconds
+    mytime = setTimeout('display_ct()', refresh)
+}
+
+function display_ct() {
+    var CDate = new Date()
+    NewDate = CDate.toLocaleTimeString();
+    document.getElementById('ct').innerHTML = NewDate;
+    display_c();
+}
+/*End of CalanderCard JS Code*/
 
 
+/*Start of LinksCard JS Code*/
 function getGoogle() {
     var term, myWindow;
     term = document.getElementById('searchTerm').value;
@@ -169,7 +189,4 @@ function getGithub() {
 function getYoutube() {
     myWindow = window.open("https://www.youtube.com/", "_blank")
 }
-function NewsApiHelp() {
-    var myWindow;
-    myWindow = window.open("https://newsapi.org/docs/endpoints/top-headlines", "_blank")
-}
+/*End of LinksCard JS Code*/
