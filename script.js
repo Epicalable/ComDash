@@ -57,7 +57,10 @@ function getNews() {
     // create the get request
     const xhr = new XMLHttpRequest();
     let term = document.getElementById('searchTerm').value;
-    // use for the post request 
+    if (term == "") {
+        alert("Please Enter Country Abbrevation (EX.SG,US,AU) Before Requesting For News Headlines!");
+    } else { 
+       // use for the post request 
     xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${term}&apiKey=${apiKey}`, true)
     // when response is ready
     xhr.onload = function () {
@@ -78,7 +81,9 @@ function getNews() {
         });
         newsAccordion.innerHTML = newsHtml;
     }
-    xhr.send()
+    xhr.send() 
+    }
+    
 }
 function NewsApiHelp() {
     var myWindow;
@@ -93,7 +98,7 @@ function addList() {
     var list = document.getElementById('list');
     var val = list.value;
     if (val == "") {
-        alert("Please enter something first!");
+        alert("Please Enter Your Task Before Submiting!");
     } else {
         lists.push(val.trim());
         list.value = '';
@@ -105,7 +110,6 @@ function displayList() {
     for (var i = 0; i < lists.length; i++) {
         data += "<li class='list-group-item'><button class='pull-right' onclick='removeList(" + i + ")'>" + "<svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 24 24' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path></svg>" + "<span class='glyphicon glyphicon-trash' ></span ></button > " + lists[i] + "</li > ";
     }
-
     document.getElementById('result').innerHTML = data;
 }
 function removeList(list) {
@@ -161,7 +165,6 @@ let currDate = new Date()
 let curr_month = { value: currDate.getMonth() }
 let curr_year = { value: currDate.getFullYear() }
 generateCalendar(curr_month.value, curr_year.value)
-
 function display_c() {
     var refresh = 1000; // Refresh rate in milli seconds
     mytime = setTimeout('display_ct()', refresh)
@@ -178,8 +181,12 @@ function display_ct() {
 /*Start of LinksCard JS Code*/
 function getGoogle() {
     var term, myWindow;
-    term = document.getElementById('searchTerm').value;
-    myWindow = window.open("http://www.google.com/search?q=" + term, "_blank")
+    term = document.getElementById('GooglesearchTerm').value;
+    if (term == "") {
+        alert("Please Enter Something Before Asking Google!");
+    } else {
+        myWindow = window.open("http://www.google.com/search?q=" + term, "_blank")
+    }
 }
 function getGithub() {
     myWindow = window.open("https://github.com/Epicalable", "_blank")

@@ -6,7 +6,8 @@
 
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="450" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/9168116f-8730-45b3-acda-0161788406a4">
+<img width="250" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/9168116f-8730-45b3-acda-0161788406a4">
+<img width="250" alt="EPCA Comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/7720f66e-3595-424d-ad18-630b52a516e3">
 
 (Current Progress of ComDash Locally hosted on my PC)
 
@@ -24,11 +25,20 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 ComDash Updates In This Commit:-
-1. TaskCard now has a scrollbar. Hence, we are removing the 5 tasks limit!!!
+1. Added Warnings if users submits an empty string/character in the input field.
 2. Minor Card elements adjustments and additions.
 3. Update readme.md
 
-Last Updated: 25-May-2023 18:55HRS (Singapore Standard Time)
+Code Checks Manifest:-
+All Checks Status: ✅
+-----------------------------------------
+BackEnd Code Integrity Checks: ✅
+FrontEnd UI Stability Checks: ✅
+UX (User Experience) Checks: ✅
+BackEnd Code- FrontEnd UI Integration Checks: ✅
+(All evaluations are done by the R&D Department)
+
+Last Updated: 26-May-2023 17:45HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -49,10 +59,10 @@ To run ComDash all you'll need to do is to open ComDash.html file in your browse
 Upon opening, by default you can reteive news and weather using pre-existing APIs but if you want it to be personalised then it is best to activate an API. To do that you will need to head to:
 
 1. https://newsapi.org/ : For ComDash To Get Current News Headlines For You And Display In NewsCard.  
-<img width="100" alt="NewsCard" src="https://github.com/Epicalable/ComDash/assets/69076784/41343f3f-af0a-4ece-ba52-61e432700150">
+    <img width="100" alt="NewsCard" src="https://github.com/Epicalable/ComDash/assets/69076784/41343f3f-af0a-4ece-ba52-61e432700150"> <img width="100" alt="comdashnews" src="https://github.com/Epicalable/ComDash/assets/69076784/9cbec174-362a-4cd2-a98f-45af3ba8377e"> <img width="100" alt="comdashnews2" src="https://github.com/Epicalable/ComDash/assets/69076784/4d300954-183f-40f2-870d-7f31b064e133">
 
 2. https://openweathermap.org/ : For ComDash To Get current Weather information For You And Display In WeatherCard .  
-<img width="100" alt="WeatherCard" src="https://github.com/Epicalable/ComDash/assets/69076784/d8c5947d-956b-47da-9335-4fc85b308cfb">
+   <img width="100" alt="WeatherCard" src="https://github.com/Epicalable/ComDash/assets/69076784/d8c5947d-956b-47da-9335-4fc85b308cfb"> <img width="100" alt="Comdashweather" src="https://github.com/Epicalable/ComDash/assets/69076784/c134bb20-19c2-439d-ba04-760d91dd1b83"> <img width="100" alt="Comdashweather2" src="https://github.com/Epicalable/ComDash/assets/69076784/394b2768-b9a8-4f6b-b358-8f614574fcc3">
 
 Both websites once registered will provide you an API key, Users should then copy the API key and paste it in Javascript code.
 
