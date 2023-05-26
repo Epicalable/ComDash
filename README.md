@@ -6,8 +6,7 @@
 
 Note: This project is still In developement and the current product shown might not reflect the final product.
 
-<img width="250" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/9168116f-8730-45b3-acda-0161788406a4">
-<img width="250" alt="EPCA Comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/7720f66e-3595-424d-ad18-630b52a516e3">
+<img width="200" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/9168116f-8730-45b3-acda-0161788406a4"> <img width="200" alt="EPCA Comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/7720f66e-3595-424d-ad18-630b52a516e3"> <img width="200" src="https://github.com/Epicalable/ComDash/assets/69076784/852195c5-8151-440b-bbd5-0517a3d4055c">
 
 (Current Progress of ComDash Locally hosted on my PC)
 
@@ -59,12 +58,14 @@ To run ComDash all you'll need to do is to open ComDash.html file in your browse
 Upon opening, by default you can reteive news and weather using pre-existing APIs but if you want it to be personalised then it is best to activate an API. To do that you will need to head to:
 
 1. https://newsapi.org/ : For ComDash To Get Current News Headlines For You And Display In NewsCard.  
-    <img width="100" alt="NewsCard" src="https://github.com/Epicalable/ComDash/assets/69076784/41343f3f-af0a-4ece-ba52-61e432700150"> <img width="100" alt="comdashnews" src="https://github.com/Epicalable/ComDash/assets/69076784/9cbec174-362a-4cd2-a98f-45af3ba8377e"> <img width="100" alt="comdashnews2" src="https://github.com/Epicalable/ComDash/assets/69076784/4d300954-183f-40f2-870d-7f31b064e133">
+    <img width="100" alt="comdashnews" src="https://github.com/Epicalable/ComDash/assets/69076784/9cbec174-362a-4cd2-a98f-45af3ba8377e"> <img width="100" alt="comdashnews2" src="https://github.com/Epicalable/ComDash/assets/69076784/4d300954-183f-40f2-870d-7f31b064e133"> <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/d45e9969-0e75-4c96-9fb1-5810ffac05c1">
 
 2. https://openweathermap.org/ : For ComDash To Get current Weather information For You And Display In WeatherCard .  
-   <img width="100" alt="WeatherCard" src="https://github.com/Epicalable/ComDash/assets/69076784/d8c5947d-956b-47da-9335-4fc85b308cfb"> <img width="100" alt="Comdashweather" src="https://github.com/Epicalable/ComDash/assets/69076784/c134bb20-19c2-439d-ba04-760d91dd1b83"> <img width="100" alt="Comdashweather2" src="https://github.com/Epicalable/ComDash/assets/69076784/394b2768-b9a8-4f6b-b358-8f614574fcc3">
+   <img width="100" alt="Comdashweather" src="https://github.com/Epicalable/ComDash/assets/69076784/c134bb20-19c2-439d-ba04-760d91dd1b83"> <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/df16fe90-1e3f-4afe-bf58-b28457c1da18"> <img width="100" alt="Comdashweather2" src="https://github.com/Epicalable/ComDash/assets/69076784/394b2768-b9a8-4f6b-b358-8f614574fcc3">
 
-Both websites once registered will provide you an API key, Users should then copy the API key and paste it in Javascript code.
+3. https://unsplash.com/developers : For ComDash to get background wallpaper on different cities based on which city's weather users want to fetch. (Users do not need to subscribe to this as there is no api key and it's already bundeled into the code for you.)
+
+The first 2 websites once registered will provide you an API key, Users should then copy the API key and paste it in Javascript code.
 
 
 ## Issues
