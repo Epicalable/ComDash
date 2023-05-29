@@ -24,7 +24,7 @@ let weather = {
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind speed: " + speed + " km/h";
         document.querySelector(".weather").classList.remove("loading");
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
+        document.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${name}')`;
     },
     search: function () {
         this.fetchWeather(document.querySelector(".search-bar").value);
@@ -82,11 +82,9 @@ function getNews() {
         newsAccordion.innerHTML = newsHtml;
     }
     xhr.send() 
-    }
-    
+    } 
 }
 function NewsApiHelp() {
-    var myWindow;
     myWindow = window.open("https://newsapi.org/docs/endpoints/top-headlines", "_blank")
 }
 /*End of NewsCard JS Code*/
@@ -180,12 +178,12 @@ function display_ct() {
 
 /*Start of LinksCard JS Code*/
 function getGoogle() {
-    var term, myWindow;
+    var term;
     term = document.getElementById('GooglesearchTerm').value;
     if (term == "") {
         alert("Please Enter Something Before Asking Google!");
     } else {
-        myWindow = window.open("http://www.google.com/search?q=" + term, "_blank")
+        myWindow = window.open(`http://www.google.com/search?q=${term}`, "_blank")
     }
 }
 function getGithub() {

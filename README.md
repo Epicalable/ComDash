@@ -1,14 +1,14 @@
 # ComDash <img width ="30" height="30" src="https://user-images.githubusercontent.com/69076784/236990283-83859a95-c9fa-4d2a-8729-4afb3900789d.png">
 
-###### An All in one Web based Dashboard for News, Weathers and More...
+###### An All In One Web based Dashboard For News, Weathers and More...
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Epicalable/ComDash) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Epicalable/ComDash) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Epicalable/ComDash/issues)
 
-Note: This project is still In developement and the current product shown might not reflect the final product.
+Note: This project is currently still In developement and the current product shown might not reflect the final product.
 
-<img width="200" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/9168116f-8730-45b3-acda-0161788406a4"> <img width="200" alt="EPCA Comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/7720f66e-3595-424d-ad18-630b52a516e3"> <img width="200" src="https://github.com/Epicalable/ComDash/assets/69076784/852195c5-8151-440b-bbd5-0517a3d4055c">
+<img width="200" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/9168116f-8730-45b3-acda-0161788406a4"> <img width="200" src="https://github.com/Epicalable/ComDash/assets/69076784/852195c5-8151-440b-bbd5-0517a3d4055c">
 
-(Current Progress of ComDash Locally hosted on my PC)
+(Current Progress of ComDash)
 
 
 ## Table Of Contents
@@ -24,9 +24,8 @@ Note: This project is still In developement and the current product shown might 
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 ComDash Updates In This Commit:-
-1. Added Warnings if users submits an empty string/character in the input field.
-2. Minor Card elements adjustments and additions.
-3. Update readme.md
+1. Code cleanup.
+2. Update readme.md
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -37,7 +36,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code- FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 26-May-2023 17:45HRS (Singapore Standard Time)
+Last Updated: 29-May-2023 13:45HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

@@ -12,7 +12,7 @@
         <script src="./script.js" defer></script>
     </head>
     
-    <body onload=display_ct();>>
+    <body onload=display_ct();>
     
         <div class="calendar">
             <div class="calendar-header">
@@ -40,7 +40,7 @@
     
         <div class="weathercard">
             <div class="search">
-                <input type="text" class="search-bar" placeholder="Enter Your City For Weather (Ex.Singapore)">
+                <input class="search-bar" placeholder="Enter Your City For Weather (Ex.Singapore)">
                 <button>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny" viewBox="0 0 24 24"
                         height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@
             <label class="newslabel">News Headlines</label>
             <div class="newssearch">
                 <form>
-                    <input type="text" class="news-search-bar" id="searchTerm" placeholder="Enter Country Abbv Here (Ex.SG, US)"/>
+                    <input class="news-search-bar" id="searchTerm" placeholder="Enter Country Abbv Here (Ex.SG, US)"/>
                     <button type="button" onclick="getNews()">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
                             xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +117,7 @@
             <div class="form-inline">
                 <label class="label">Enter your tasks below: </label>
                 <br/>
-                <input type="text" id="list" class="form-control" placeholder="Enter Your Tasks Here"/>
+                <input id="list" class="form-control" placeholder="Enter Your Tasks Here"/>
                 <button class="btn btn-success" onclick="addList()"><svg stroke="currentColor" fill="currentColor"
                         stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em"
                         width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +137,7 @@
         <div class="linkscard">
             <div>
                 <form>
-                    <input type="text" class="googlesearch-bar" id="GooglesearchTerm" placeholder="Search Google"/>
+                    <input class="googlesearch-bar" id="GooglesearchTerm" placeholder="Search Google"/>
                     <button type="button" onclick="getGoogle()">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px" viewBox="0 0 48 48"
                             enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
