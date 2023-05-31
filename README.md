@@ -24,8 +24,9 @@ Note: This project is currently still In developement and the current product sh
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 ComDash Updates In This Commit:-
-1. Code cleanup.
-2. Update readme.md
+1. Added Min and Max temperature.
+2. Adjusted card elements.
+3. Update Readme.md
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -36,7 +37,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code- FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 29-May-2023 13:45HRS (Singapore Standard Time)
+Last Updated: 29-May-2023 19:35HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

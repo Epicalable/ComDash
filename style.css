@@ -48,7 +48,11 @@ button:hover {
     background: #7c7c7c6b;
 }
 h1.temp {
-    margin-bottom: 0.4em;
+    margin-bottom: -0.1em;
+}
+.city {
+    margin-bottom: -0.4em;
+    margin-top: 0em;
 }
 .flex {
     display: flex;
@@ -89,8 +93,9 @@ label.newslabel {
     color: white;
     position: relative;
     font-family: inherit;
-    font-size: 100%;
-    left: 185px;
+    font-size: 140%;
+    left: 164px;
+    top: 4px;
 }
 .newssearch{
     display: flex;
@@ -115,7 +120,7 @@ input.news-search-bar {
     display: list-item;
     position: absolute;
     overflow-y: auto;
-    height: 660px;
+    height: 650px;
     width: 500px;
     bottom: 0px;
 }
