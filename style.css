@@ -190,7 +190,7 @@ button.pull-right {
     padding: 10px;
 }
 .calendar-week-day {
-    height: 15px;
+    height: 25px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     font-weight: 600;
@@ -223,7 +223,7 @@ button.pull-right {
 }
 .calendar-days div.curr-date,
 .calendar-days div.curr-date:hover {
-    background-color: #545458;
+    background-color: #8a8383;
     color: #f8fbff;
     border-radius: 50%;
 }

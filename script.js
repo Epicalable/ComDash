@@ -17,14 +17,14 @@ let weather = {
         const { icon, description } = data.weather[0];
         const { temp, humidity, feels_like, temp_min, temp_max } = data.main;
         const { speed } = data.wind;
-        document.querySelector(".city").innerText = "Weather in " + name;
-        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".city").innerText = `Weather in ${name}`;
+        document.querySelector(".icon").src = `https://openweathermap.org/img/wn/${icon}.png`;
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp + "°C";
-        document.querySelector(".feels_like").innerText = "Currently Feels like: " + feels_like + "°C";
-        document.querySelector(".tempminmax").innerText = "Temp Min: " + temp_min + "°C" + " || Temp Max: " + temp_max + "°C";
-        document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h";
+        document.querySelector(".temp").innerText = `${temp}°C`;
+        document.querySelector(".feels_like").innerText = `Currently Feels like: ${feels_like}°C`;
+        document.querySelector(".tempminmax").innerText = `Temp Min: ${temp_min}°C || Temp Max: ${temp_max}°C`;
+        document.querySelector(".humidity").innerText = `Humidity: ${humidity}%`;
+        document.querySelector(".wind").innerText = `Wind Speed: ${speed} km/h`;
         document.querySelector(".weather").classList.remove("loading");
         document.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${name}')`;
     },
