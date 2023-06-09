@@ -24,7 +24,13 @@ Note: This project is currently still In developement and the current product sh
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 ```
 ComDash Updates In This Commit:-
-1. Adjusted card elements.
+1. We are currently experimenting with a new card element which visualizes the
+   progress of the day for users to better plan their remaining time.
+2. We are also playing around with the font sizes and deciding whether
+   will it affect user experience and accessabilities.
+3. We have reorganisied the file structure and directory.
+
+This commit is purely just for user feedback and for testing to be done.
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -35,7 +41,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code- FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 4-June-2023 19:20HRS (Singapore Standard Time)
+Last Updated: 9-June-2023 19:00HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

@@ -195,3 +195,69 @@ function getYoutube() {
     myWindow = window.open("https://www.youtube.com/", "_blank")
 }
 /*End of LinksCard JS Code*/
+
+
+
+/*TESTING*/
+window.onload = function onLoad() {
+    var line = new ProgressBar.Line('#progress', {
+        color: '#FCB03C'
+    });
+
+    function progress() {
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        var countDownDate = new Date(tomorrow.toDateString()).getTime();
+
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+
+        var done = (24 - hours) / 24;
+        var percentStr = (100.0 * done).toString();
+        if (done < 0.1) {
+            percentStr = percentStr.slice(0, 4);
+        } else {
+            percentStr = percentStr.slice(0, 4);
+        }
+        return done;
+    }
+
+    line.animate(progress());  // Number from 0.0 to 1.0
+
+    requestAnimationFrame(update);
+
+    function update() {
+        line.set(progress());
+        requestAnimationFrame(update);
+    }
+};
+
+// Set the date we're counting down to
+const today = new Date()
+const tomorrow = new Date(today)
+tomorrow.setDate(tomorrow.getDate() + 1)
+var countDownDate = new Date(tomorrow.toDateString()).getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function () {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = hours + "h "
+        + minutes + "m " + seconds + "s " + "till the day ends";
+}, 1000);
