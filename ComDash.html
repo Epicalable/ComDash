@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
         <title>ComDash</title>
         <link rel="icon" type="image/x-icon" href="./icon/ComDash.png">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,12 +13,18 @@
         <script src="./scripts/progress.js" defer></script>
     </head>
     
-    <body onload=display_ct();>
+    <body>
+
+        <script>
+            document.body.addEventListener("wheel", e => {
+                if (e.ctrlKey)
+                    e.preventDefault();//prevent zoom
+            });
+        </script>
     
         <div class="calendar">
             <div class="calendar-header">
                 <span class="month-picker" id="month-picker">February</span>
-                <span id='ct'></span>
                 <div class="year-picker">
                     <span id="year">2022</span>
                 </div>
@@ -27,9 +33,9 @@
                 <div class="calendar-week-day">
                     <div>Sun</div>
                     <div>Mon</div>
-                    <div>Tue</div>
+                    <div>Tues</div>
                     <div>Wed</div>
-                    <div>Thu</div>
+                    <div>Thurs</div>
                     <div>Fri</div>
                     <div>Sat</div>
                 </div>
@@ -128,7 +134,7 @@
     
         <div class="taskcard">
             <div class="form-inline">
-                <label class="label">Enter your tasks below: </label>
+                <label class="labelet">Enter your tasks below: </label>
                 <br/>
                 <input id="list" class="form-control" placeholder="Enter Your Tasks Here"/>
                 <button class="btn btn-success" onclick="addList()"><svg stroke="currentColor" fill="currentColor"

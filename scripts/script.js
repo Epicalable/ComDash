@@ -63,7 +63,7 @@ function getNews() {
         alert("Please Enter Country Abbrevation (EX.SG,US,AU) Before Requesting For News Headlines!");
     } else { 
        // use for the post request 
-    xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${term}&apiKey=${apiKey}`, true)
+        xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${term}&apiKey=${apiKey}&pageSize=100`, true)
     // when response is ready
     xhr.onload = function () {
         let json = JSON.parse(this.responseText);
@@ -165,16 +165,6 @@ let currDate = new Date()
 let curr_month = { value: currDate.getMonth() }
 let curr_year = { value: currDate.getFullYear() }
 generateCalendar(curr_month.value, curr_year.value)
-function display_c() {
-    var refresh = 1000; // Refresh rate in milli seconds
-    mytime = setTimeout('display_ct()', refresh)
-}
-function display_ct() {
-    var CDate = new Date()
-    NewDate = CDate.toLocaleTimeString();
-    document.getElementById('ct').innerHTML = NewDate;
-    display_c();
-}
 /*End of CalanderCard JS Code*/
 
 

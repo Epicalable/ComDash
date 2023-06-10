@@ -1,5 +1,6 @@
 body {
     background-color: #222;
+    font-size: 80%;
 }
 
 
@@ -9,28 +10,35 @@ body {
     color: white;
     padding: 2em;
     border-radius: 70px;
-    height: 256px;
+    height: 220px;
     width: 420px;
     position: absolute;
     left: 20px;
     top: 13px;
 }
+.weather {
+    left: 10px;
+    top: 46px;
+    position: relative;
+}
 .search {
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 18px;
+    position: absolute;
 }
 button {
     margin: 0.5em;
     border-radius: 50%;
     border: none;
-    height: 44px;
-    width: 41px;
+    height: 32px;
+    width: 34px;
     outline: none;
-    background: #363636;
+    background: rgb(54, 54, 54);
     color: white;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out 0s;
 }
 input.search-bar {
     border: none;
@@ -80,7 +88,7 @@ h1.temp {
 /*Start of NewsCard Css Code*/
 .headlinescard {
     background: #000000b9;
-    position: absolute;
+    position: fixed;
     overflow-y: auto;
     height: 728px;
     width: 500px;
@@ -93,7 +101,7 @@ label.newslabel {
     position: relative;
     font-family: inherit;
     font-size: 140%;
-    left: 164px;
+    left: 180px;
     top: 4px;
 }
 .newssearch{
@@ -117,14 +125,13 @@ input.news-search-bar {
 .newsscard {
     background: #00000000;
     display: list-item;
-    position: absolute;
     overflow-y: auto;
     height: 650px;
     width: 500px;
     bottom: 0px;
 }
 .newscard {
-    padding: 1em;
+    padding: 2em;
     color: azure;
 }
 /*End of NewsCard Css Code*/
@@ -135,14 +142,19 @@ input.news-search-bar {
     padding: 2em;
     color: white;
     display: flex;
-    background-color: #000000b9;
-    height: 357px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.725);
+    height: 437px;
     width: 423px;
     border-radius: 70px;
     flex-direction: column;
     left: 550px;
-    top: 307px;
+    top: 253px;
     position: absolute;
+}
+label.labelet {
+    left: 6px;
+    position: relative;
 }
 input#list {
     border: none;
@@ -160,6 +172,7 @@ button.pull-right {
     padding: 0.5em;
 }
 .col-md-6 {
+    display: list-item;
     overflow-y: auto;
     width: -webkit-fill-available;
 }
@@ -173,10 +186,10 @@ button.pull-right {
     border-radius: 70px;
     padding: 2em;
     position: relative;
-    top: 345px;
+    top: 411px;
     left: 12px;
-    width: 485px;
-    height: 324px;
+    width: 471px;
+    height: 307px;
     box-sizing: border-box;
 }
 .calendar-header {
@@ -242,8 +255,7 @@ button.pull-right {
     top: 13px;
     left: 550px;
     position: absolute;
-    height: 90px;
-    max-height: 100%;
+    height: 168px;
     width: 423px;
 }
 input.googlesearch-bar {
@@ -287,7 +299,7 @@ a:hover {
     background-color: rgb(0, 0, 0);
     height: 20px;
     position: absolute;
-    width: 490px;
+    width: 467px;
     left: 1px;
 }
 
@@ -304,14 +316,14 @@ img#sunrise {
     width: 40px;
     height: 40px;
     position: relative;
-    left: 80px;
+    left: 72px;
 }
 
 img#sunset {
     width: 40px;
     height: 40px;
     position: relative;
-    left: 275px;
+    left: 266px;
 }
 
 .suntimer {
@@ -319,9 +331,9 @@ img#sunset {
     position: absolute;
     border-radius: 30px;
     height: 94px;
-    width: 497px;
-    left: 534px;
-    top: 177px;
+    width: 470px;
+    left: 8px;
+    top: 291px;
     margin: 1em;
 }
 
@@ -343,5 +355,5 @@ p#demo {
     position: absolute;
     top: 0px;
     color: #eaeaea;
-    left: 155px;
+    left: 137px;
 }
