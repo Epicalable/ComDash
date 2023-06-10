@@ -25,12 +25,14 @@ Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-spee
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
+1. In this commit we will like to address the killing of some bugs:
+   1. Now Newscard won't wobble around when browser window is resized.
+   2. We have re-aligned days in the calander for better readability.
+2. Sleeker and minimalistic UI for a better UX.
+
+Other Highlights:-
 1. We are currently experimenting with a new card element which visualizes the
    time progress of the day, for users to better plan their remaining time.
-2. We have enhanced the newsfeed from the default 20 news per request to up to
-   100 news per request.
-3. We have shifted and realigned some card elements around for plans to make 
-   space for more elements in future commits.
 
 This commit is purely just for ux testing to be done.
 
@@ -40,10 +42,10 @@ All Checks Status: ✅
 BackEnd Code Integrity Checks: ✅
 FrontEnd UI Stability Checks: ✅
 UX (User Experience) Checks: ✅
-BackEnd Code- FrontEnd UI Integration Checks: ✅
+BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 10-June-2023 12:30HRS (Singapore Standard Time)
+Last Updated: 10-June-2023 18:55HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

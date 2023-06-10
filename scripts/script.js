@@ -29,14 +29,14 @@ let weather = {
         document.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${name}')`;
     },
     search: function () {
-        this.fetchWeather(document.querySelector(".search-bar").value);
+        this.fetchWeather(document.getElementById('weather-search-bar').value);
     },
 };
-document.querySelector(".search button").addEventListener("click", function () {
+document.getElementById('get_weather_button').addEventListener("click", function () {
     weather.search();
 });
 document
-    .querySelector(".search-bar")
+    .getElementById('weather-search-bar')
     .addEventListener("keyup", function (event) {
         if (event.key == "Enter") {
             weather.search();
@@ -58,7 +58,7 @@ function getNews() {
     let newsAccordion = document.getElementById('newsAccordion');
     // create the get request
     const xhr = new XMLHttpRequest();
-    let term = document.getElementById('searchTerm').value;
+    let term = document.getElementById('news-search-bar').value;
     if (term == "") {
         alert("Please Enter Country Abbrevation (EX.SG,US,AU) Before Requesting For News Headlines!");
     } else { 
@@ -249,5 +249,4 @@ var x = setInterval(function () {
 
     // Output the result in an element with id="demo"
     document.getElementById("demo").innerHTML = hours + "h "
-        + minutes + "m " + seconds + "s " + "till the day ends";
-}, 1000);
+        + minutes + "m " + seconds + "s " + "till the day ends";}, 1000);

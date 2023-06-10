@@ -1,6 +1,7 @@
 body {
     background-color: #222;
     font-size: 80%;
+    overflow-y: hidden;
 }
 
 
@@ -34,25 +35,22 @@ button {
     border: none;
     height: 32px;
     width: 34px;
-    outline: none;
-    background: rgb(54, 54, 54);
+    background: #545454;
     color: white;
     cursor: pointer;
     transition: all 0.2s ease-in-out 0s;
 }
+button:hover {
+    background: rgba(255, 255, 255, 0.749);
+}
 input.search-bar {
     border: none;
-    outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
     background: #000000;
     color: white;
-    font-family: inherit;
     font-size: 80%;
     width: 273px;
-}
-button:hover {
-    background: #7c7c7c6b;
 }
 h1.temp {
     margin-bottom: -0.1em;
@@ -71,8 +69,6 @@ h1.temp {
 }
 .weather.loading {
     visibility: hidden;
-    max-height: 20px;
-    position: relative;
 }
 .weather.loading:after {
     visibility: visible;
@@ -80,7 +76,6 @@ h1.temp {
     color: white;
     position: absolute;
     top: 0;
-    left: 20px;
 }
 /*End of WeatherCard Css Code*/
 
@@ -88,18 +83,17 @@ h1.temp {
 /*Start of NewsCard Css Code*/
 .headlinescard {
     background: #000000b9;
-    position: fixed;
+    position: relative;
     overflow-y: auto;
     height: 728px;
     width: 500px;
-    border-radius: 70px 50px 50px 70px;
-    bottom: 10px;
-    right: 17px;
+    border-radius: 70px;
+    top: -300px;
+    left: 1067px;
 }
 label.newslabel {
     color: white;
     position: relative;
-    font-family: inherit;
     font-size: 140%;
     left: 180px;
     top: 4px;
@@ -113,17 +107,14 @@ label.newslabel {
 }
 input.news-search-bar {
     border: none;
-    outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
     background: #000000;
     color: white;
-    font-family: inherit;
     font-size: 80%;
     width: 240px;
 }
 .newsscard {
-    background: #00000000;
     display: list-item;
     overflow-y: auto;
     height: 650px;
@@ -143,7 +134,7 @@ input.news-search-bar {
     color: white;
     display: flex;
     overflow-y: auto;
-    background-color: rgba(0, 0, 0, 0.725);
+    background-color: #000000b9;
     height: 437px;
     width: 423px;
     border-radius: 70px;
@@ -158,18 +149,13 @@ label.labelet {
 }
 input#list {
     border: none;
-    outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
     background: #000000;
     color: white;
-    font-family: inherit;
     font-size: 80%;
     width: 323px;
     height: 15px;
-}
-button.pull-right {
-    padding: 0.5em;
 }
 .col-md-6 {
     display: list-item;
@@ -195,10 +181,9 @@ button.pull-right {
 .calendar-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     font-size: 20px;
     font-weight: 600;
-    color: #f8fbff;
+    color: white;
     padding: 10px;
 }
 .calendar-week-day {
@@ -215,8 +200,8 @@ button.pull-right {
 .calendar-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 1px;
-    color: #f8fbff;
+    place-items: center;
+    color: white;
 }
 .calendar-days div {
     width: 30px;
@@ -236,7 +221,7 @@ button.pull-right {
 .calendar-days div.curr-date,
 .calendar-days div.curr-date:hover {
     background-color: #8a8383;
-    color: #f8fbff;
+    color: white;
     border-radius: 50%;
 }
 .calendar-days div.curr-date span {
@@ -265,7 +250,6 @@ input.googlesearch-bar {
     border-radius: 24px;
     background: #000000;
     color: white;
-    font-family: inherit;
     font-size: 80%;
     width: 284px;
 }
@@ -282,10 +266,10 @@ input.googlesearch-bar {
     width: 50%;
 }
 a:link {
-    color: #FFFFFF;
+    color: white;
 }
 a:visited {
-    color: #FFFFFF;
+    color: white;
 }
 a:hover {
     color: #545458;
@@ -302,30 +286,22 @@ a:hover {
     width: 467px;
     left: 1px;
 }
-
 .progress>svg {
     display: block;
     height: 100%;
 }
-
-#percent {
-    font-family: 'Courier New', Courier, monospace;
-}
-
 img#sunrise {
     width: 40px;
     height: 40px;
     position: relative;
     left: 72px;
 }
-
 img#sunset {
     width: 40px;
     height: 40px;
     position: relative;
     left: 266px;
 }
-
 .suntimer {
     background: #000000b9;
     position: absolute;
@@ -336,24 +312,21 @@ img#sunset {
     top: 291px;
     margin: 1em;
 }
-
 label#sleep {
     left: 226px;
-    color: #eaeaea;
+    color: white;
     position: relative;
 }
-
 label#wakeup {
     left: 30px;
-    color: #eaeaea;
+    color: white;
     position: relative;
 }
-
 p#demo {
     text-align: center;
     font-size: 17px;
     position: absolute;
     top: 0px;
-    color: #eaeaea;
+    color: white;
     left: 137px;
 }
