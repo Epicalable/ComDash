@@ -189,64 +189,74 @@ function getYoutube() {
 
 
 /*TESTING*/
-window.onload = function onLoad() {
-    var line = new ProgressBar.Line('#progress', {
-        color: '#FCB03C'
-    });
+var ctx = document.getElementById("sunriseset").getContext("2d"),
+    gr = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height),
+    sky = new Image();
 
-    function progress() {
-        const today = new Date();
-        const tomorrow = new Date(today);
-        tomorrow.setDate(tomorrow.getDate() + 1);
-        var countDownDate = new Date(tomorrow.toDateString()).getTime();
+sky.onload = go;
+sky.src = "http://i.stack.imgur.com/qhQhQ.jpg";
 
-        var now = new Date().getTime();
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+function go() {
 
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    // some style setup
+    ctx.font = "15px sans-serif";
+    gr.addColorStop(0, "#ffc");
+    gr.addColorStop(0.75, "gold");
+    gr.addColorStop(1, "orange");
 
+    ctx.shadowColor = "#ffa";
 
-        var done = (24 - hours) / 24;
-        var percentStr = (100.0 * done).toString();
-        if (done < 0.1) {
-            percentStr = percentStr.slice(0, 4);
-        } else {
-            percentStr = percentStr.slice(0, 4);
-        }
-        return done;
+    var centerX = ctx.canvas.width * 0.5,   // center of arc
+        bottomY = ctx.canvas.height + 16,   // let center be a bit below horizon
+        radiusX = ctx.canvas.width * 0.52, // radius, 80% of width in this example
+        radiusY = ctx.canvas.height * 0.8;  // radius, 90% of height in this example
+
+    // define sunrise and sunset times (in 24-hour clock, can be fractional)
+    var time = 7, sunrise = 7, sunset = 19;
+
+    (function loop() {
+        var normTime = getTime();                                  // get normalized time
+        var angle = getAngle(normTime);                            // get angle in radians
+        var x = centerX + radiusX * Math.cos(angle);               // calcuate point
+        var y = bottomY + radiusY * Math.sin(angle);
+        drawSky(normTime);                                         // draw sky gradient
+        drawSun(x, y);                                             // draw sun at point
+        drawTime();                                                // render time
+        requestAnimationFrame(loop)
+    })();
+
+    function getTime() {
+        // produces a normalized pseduo-time
+        var dt = new Date();
+        time = dt.getHours();
+        if (time > 23) time = 0;
+        return (time - sunrise) / (sunset - sunrise);
     }
 
-    line.animate(progress());  // Number from 0.0 to 1.0
-
-    requestAnimationFrame(update);
-
-    function update() {
-        line.set(progress());
-        requestAnimationFrame(update);
+    function getAngle(normTime) {
+        return Math.PI + Math.PI * normTime
     }
-};
 
-// Set the date we're counting down to
-const today = new Date()
-const tomorrow = new Date(today)
-tomorrow.setDate(tomorrow.getDate() + 1)
-var countDownDate = new Date(tomorrow.toDateString()).getTime();
+    function drawSun(x, y) {
+        ctx.beginPath();
+        ctx.moveTo(x + 16, y);
+        ctx.arc(x, y, 16, 0, 6.28);
+        ctx.fillStyle = gr;
+        ctx.shadowBlur = 20;
+        ctx.fill();
+    }
 
-// Update the count down every 1 second
-var x = setInterval(function () {
+    function drawTime() {
+        ctx.fillStyle = "#fff";
+        ctx.shadowBlur = 0;
+        ctx.fillText("Sky-Visualisation Time(Hours): " + time.toFixed(0), 10, 20);
+    }
 
-    // Get today's date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = hours + "h "
-        + minutes + "m " + seconds + "s " + "till the day ends";}, 1000);
+    function drawSky(t) {
+        t = Math.max(0, Math.min(1, t));
+        var iw = sky.width,
+            w = ctx.canvas.width,
+            x = 60 + (iw - 120) * t;
+        ctx.drawImage(sky, x, 0, 1, sky.height, 0, 0, w, ctx.canvas.height);
+    }
+}

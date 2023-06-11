@@ -6,7 +6,7 @@
 
 Note: This project is currently still In developement and the current product shown might not reflect the final product.
 
-<img width="200" alt="comdash" src="https://github.com/Epicalable/ComDash/assets/69076784/9168116f-8730-45b3-acda-0161788406a4"> <img width="200" src="https://github.com/Epicalable/ComDash/assets/69076784/852195c5-8151-440b-bbd5-0517a3d4055c">
+<img width="400" src="https://github.com/Epicalable/ComDash/assets/69076784/516148ee-b990-4c9e-a99b-a6ba424710b2">  
 
 (Current Progress of ComDash)
 
@@ -25,14 +25,9 @@ Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-spee
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-1. In this commit we will like to address the killing of some bugs:
-   1. Now Newscard won't wobble around when browser window is resized.
-   2. We have re-aligned days in the calander for better readability.
-2. Sleeker and minimalistic UI for a better UX.
-
-Other Highlights:-
-1. We are currently experimenting with a new card element which visualizes the
-   time progress of the day, for users to better plan their remaining time.
+1. Sleeker and minimalistic UI for a better UX.
+2. We are currently experimenting with a new card element which visualizes the
+   sun position during current time, for users to better plan their remaining time.
 
 This commit is purely just for ux testing to be done.
 
@@ -45,7 +40,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 10-June-2023 18:55HRS (Singapore Standard Time)
+Last Updated: 11-June-2023 22:20HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

@@ -10,7 +10,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./scripts/style.css">
         <script src="./scripts/script.js" defer></script>
-        <script src="./scripts/progress.js" defer></script>
     </head>
     
     <body>
@@ -45,13 +44,8 @@
         </div>
 
 
-        <div class="suntimer">
-            <img src="./scripts/elements/sunrise.png" id="sunrise">
-            <label id="wakeup">sunrise</label>
-            <p id="demo"></p>
-            <img src="./scripts/elements/sunset.png" id="sunset">
-            <label id="sleep">sunset</label>
-            <div class="progress" id="progress"></div>
+        <div class="sunrs">
+            <canvas id="sunriseset" width=400 height=90></canvas>
         </div>
     
     
