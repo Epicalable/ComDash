@@ -40,7 +40,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 11-June-2023 22:20HRS (Singapore Standard Time)
+Last Updated: 12-June-2023 18:40HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

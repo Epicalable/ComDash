@@ -90,7 +90,7 @@ h1.temp {
     height: 728px;
     width: 500px;
     border-radius: 70px;
-    top: -395px;
+    top: -416px;
     left: 1067px;
 }
 label.newslabel {
@@ -284,8 +284,21 @@ a:hover {
 canvas {
     background: #acf
 }
+
 .sunrs {
+    background: #000000b9;
+    color: white;
+    padding: 1.1em;
+    border-radius: 45px;
+    height: 86px;
+    width: 442px;
     position: relative;
-    top: -10px;
-    left: 47px;
+    top: -21px;
+    left: 12px;
+}
+
+canvas#sunriseset {
+    top: 12px;
+    left: 35px;
+    position: absolute;
 }
