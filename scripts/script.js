@@ -188,7 +188,7 @@ function getYoutube() {
 
 
 
-/*TESTING*/
+/*Start of Skyvisual JS Code*/
 var ctx = document.getElementById("sunriseset").getContext("2d"),
     gr = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height),
     sky = new Image();
@@ -203,9 +203,7 @@ function go() {
     gr.addColorStop(0, "#ffc");
     gr.addColorStop(0.75, "gold");
     gr.addColorStop(1, "orange");
-
     ctx.shadowColor = "#ffa";
-
     var centerX = ctx.canvas.width * 0.5,   // center of arc
         bottomY = ctx.canvas.height + 16,   // let center be a bit below horizon
         radiusX = ctx.canvas.width * 0.52, // radius, 80% of width in this example
@@ -224,7 +222,6 @@ function go() {
         drawTime();                                                // render time
         requestAnimationFrame(loop)
     })();
-
     function getTime() {
         // produces a normalized pseduo-time
         var dt = new Date();
@@ -232,11 +229,9 @@ function go() {
         if (time > 23) time = 0;
         return (time - sunrise) / (sunset - sunrise);
     }
-
     function getAngle(normTime) {
         return Math.PI + Math.PI * normTime
     }
-
     function drawSun(x, y) {
         ctx.beginPath();
         ctx.moveTo(x + 16, y);
@@ -245,13 +240,11 @@ function go() {
         ctx.shadowBlur = 20;
         ctx.fill();
     }
-
     function drawTime() {
         ctx.fillStyle = "#fff";
         ctx.shadowBlur = 0;
         ctx.fillText("Sky-Visualisation Time(Hours): " + time.toFixed(0), 10, 20);
     }
-
     function drawSky(t) {
         t = Math.max(0, Math.min(1, t));
         var iw = sky.width,
@@ -260,3 +253,4 @@ function go() {
         ctx.drawImage(sky, x, 0, 1, sky.height, 0, 0, w, ctx.canvas.height);
     }
 }
+/*End of Skyvisual JS Code*/

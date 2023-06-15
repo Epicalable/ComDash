@@ -47,6 +47,7 @@ button:hover {
 }
 input.search-bar {
     border: none;
+    outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
     background: #000000;
@@ -109,6 +110,7 @@ label.newslabel {
 }
 input.news-search-bar {
     border: none;
+    outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
     background: #000000;
@@ -119,9 +121,8 @@ input.news-search-bar {
 .newsscard {
     display: list-item;
     overflow-y: auto;
-    height: 650px;
+    height: 662px;
     width: 500px;
-    bottom: 0px;
 }
 .newscard {
     padding: 2em;
@@ -151,6 +152,7 @@ label.labelet {
 }
 input#list {
     border: none;
+    outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
     background: #000000;
@@ -280,11 +282,10 @@ a:hover {
 
 
 
-/*TESTING*/
+/*Start of Skyvisual Css Code*/
 canvas {
     background: #acf
 }
-
 .sunrs {
     background: #000000b9;
     color: white;
@@ -296,9 +297,9 @@ canvas {
     top: -21px;
     left: 12px;
 }
-
 canvas#sunriseset {
     top: 12px;
     left: 35px;
     position: absolute;
 }
+/*End of Skyvisual Css Code*/

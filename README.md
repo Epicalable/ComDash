@@ -6,10 +6,9 @@
 
 Note: This project is currently still In developement and the current product shown might not reflect the final product.
 
-<img width="400" src="https://github.com/Epicalable/ComDash/assets/69076784/516148ee-b990-4c9e-a99b-a6ba424710b2">  
+<img width="400" src="https://github.com/Epicalable/ComDash/assets/76218539/0add7147-1af3-4b5e-bd49-db0dac9692f1">  
 
-(Current Progress of ComDash)
-
+(Current progress of ComDash)
 
 ## Table Of Contents
 - [WHAT'S NEW?](#whats-new)
@@ -26,10 +25,13 @@ Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-spee
 ComDash Updates In This Commit:-
 Update Highlights:-
 1. Sleeker and minimalistic UI for a better UX.
-2. We are currently experimenting with a new card element which visualizes the
-   sun position during current time, for users to better plan their remaining time.
+2. New stock pictures for Readme.md
 
-This commit is purely just for ux testing to be done.
+Note to stakeholders:
+We are currently taking a brake from almost doing commits daily but do not 
+worry as we have decided to add a whole set of new features first and then push
+out the commit for you to test them out.
+Also now we will be able to take our time and develop other Epicalable projects.
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -40,7 +42,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 12-June-2023 18:40HRS (Singapore Standard Time)
+Last Updated: 12-June-2023 22:55HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -61,10 +63,11 @@ To run ComDash all you'll need to do is to open ComDash.html file in your browse
 Upon opening, by default you can reteive news and weather using pre-existing APIs but if you want it to be personalised then it is best to activate an API. To do that you will need to head to:
 
 1. https://newsapi.org/ : For ComDash To Get Current News Headlines For You And Display In NewsCard.  
-    <img width="100" alt="comdashnews" src="https://github.com/Epicalable/ComDash/assets/69076784/9cbec174-362a-4cd2-a98f-45af3ba8377e"> <img width="100" alt="comdashnews2" src="https://github.com/Epicalable/ComDash/assets/69076784/4d300954-183f-40f2-870d-7f31b064e133"> <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/d45e9969-0e75-4c96-9fb1-5810ffac05c1">
+    <img width="100" alt="news1" src="https://github.com/Epicalable/ComDash/assets/76218539/23b19946-b2a1-4084-bcb1-84fe1c225da4"><img width="100" alt="news2" src="https://github.com/Epicalable/ComDash/assets/76218539/afa10e6e-a67b-409c-a930-ac00c84499b9"><img width="100" alt="news3" src="https://github.com/Epicalable/ComDash/assets/76218539/da0b5529-2223-4b53-8486-82af8db1e24c">
 
 2. https://openweathermap.org/ : For ComDash To Get current Weather information For You And Display In WeatherCard .  
-   <img width="100" alt="Comdashweather" src="https://github.com/Epicalable/ComDash/assets/69076784/c134bb20-19c2-439d-ba04-760d91dd1b83"> <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/df16fe90-1e3f-4afe-bf58-b28457c1da18"> <img width="100" alt="Comdashweather2" src="https://github.com/Epicalable/ComDash/assets/69076784/394b2768-b9a8-4f6b-b358-8f614574fcc3">
+   <img width="100" alt="wea1" src="https://github.com/Epicalable/ComDash/assets/76218539/a94fdc6e-f119-445d-9061-a322c4b283b7"><img width="100" alt="wea2" src="https://github.com/Epicalable/ComDash/assets/76218539/d9b06afe-9378-437f-9d84-c510c4663e24"><img width="100" alt="wea3" src="https://github.com/Epicalable/ComDash/assets/76218539/f916c41c-e3d9-4645-b840-574d06b2c452">
+
 
 3. https://unsplash.com/developers : For ComDash to get background wallpaper on different cities based on which city's weather users want to fetch. (Users do not need to subscribe to this as there is no api key and it's already bundeled into the code for you.)
 
@@ -72,7 +75,7 @@ The first 2 websites once registered will provide you an API key, Users should t
 
 
 ## Issues
-As this project is still in development and testing stage, if you run into any issues while operating or have any suggestions or features, please feel free to drop by our [issues](https://github.com/Epicalable/ComDash/issues) section and open a issue and we'll respond within 2 working days.
+As this project is still in development and testing stage, if you run into any issues while operating or have any suggestions or features, please feel free to drop by our [issues](https://github.com/Epicalable/ComDash/issues) section and open a issue and we'll respond within 2-4 working days, Thank you for your understanding.
 
 
 ## License
