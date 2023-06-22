@@ -2,22 +2,24 @@ body {
     background-color: #222;
     font-size: 80%;
     overflow-y: hidden;
-    overflow-y: hidden;
     overflow-x: hidden;
 }
 
 
 /*Start of WeatherCard Css Code*/
 .weathercard {
-    background: #000000b9;
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     color: white;
     padding: 2em;
     border-radius: 70px;
-    height: 220px;
-    width: 420px;
+    height: 231px;
+    width: 418px;
     position: absolute;
-    left: 20px;
-    top: 13px;
+    left: 22px;
+    top: 111px;
 }
 .weather {
     left: 10px;
@@ -50,9 +52,9 @@ input.search-bar {
     outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
-    background: #000000;
+    background: rgb(0 0 0 / 0.41);
     color: white;
-    font-size: 80%;
+    font-size: 100%;
     width: 273px;
 }
 h1.temp {
@@ -85,7 +87,10 @@ h1.temp {
 
 /*Start of NewsCard Css Code*/
 .headlinescard {
-    background: #000000b9;
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     position: relative;
     overflow-y: auto;
     height: 728px;
@@ -113,9 +118,9 @@ input.news-search-bar {
     outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
-    background: #000000;
+    background: rgb(0 0 0 / 0.41);
     color: white;
-    font-size: 80%;
+    font-size: 100%;
     width: 240px;
 }
 .newsscard {
@@ -133,17 +138,20 @@ input.news-search-bar {
 
 /*Start of TaskCard Css Code*/
 .taskcard {
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 2em;
     color: white;
     display: flex;
     overflow-y: auto;
-    background-color: #000000b9;
-    height: 437px;
+    height: 410px;
     width: 423px;
     border-radius: 70px;
     flex-direction: column;
     left: 550px;
-    top: 253px;
+    top: 281px;
     position: absolute;
 }
 label.labelet {
@@ -155,9 +163,9 @@ input#list {
     outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
-    background: #000000;
+    background: rgb(0 0 0 / 0.41);
     color: white;
-    font-size: 80%;
+    font-size: 100%;
     width: 323px;
     height: 15px;
 }
@@ -171,12 +179,15 @@ input#list {
 
 /*Start of CalanderCard Css Code*/
 .calendar {
-    background-color: #000000b9;
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     color: white;
     border-radius: 70px;
     padding: 2em;
     position: relative;
-    top: 411px;
+    top: 400px;
     left: 12px;
     width: 471px;
     height: 307px;
@@ -199,7 +210,7 @@ input#list {
 .calendar-week-day div {
     display: grid;
     place-items: center;
-    color: #79788c;
+    color: #a49b9b;
 }
 .calendar-days {
     display: grid;
@@ -236,7 +247,10 @@ input#list {
 
 /*Start of GoogleCard Css Code*/
 .linkscard {
-    background-color: #000000b9;
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 2em;
     border-radius: 70px;
     display: flex;
@@ -244,7 +258,7 @@ input#list {
     top: 13px;
     left: 550px;
     position: absolute;
-    height: 168px;
+    height: 77px;
     width: 423px;
 }
 input.googlesearch-bar {
@@ -252,22 +266,28 @@ input.googlesearch-bar {
     outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
-    background: #000000;
+    background: rgb(0 0 0 / 0.41);
     color: white;
-    font-size: 80%;
+    font-size: 100%;
     width: 284px;
 }
 /*End of GoogleCard Css Code*/
 
 
 /*Start of Footer Css Code*/
+div#ComDash {
+    font-size: 31px;
+    top: -24px;
+    left: 92px;
+    color: #a49b9b;
+    position: absolute;
+}
 .footer {
     position: fixed;
     text-align: left;
     color: white;
-    bottom: 4px;
-    left: 9px;
-    width: 50%;
+    bottom: -603px;
+    left: -530px;
 }
 a:link {
     color: white;
@@ -287,15 +307,18 @@ canvas {
     background: #acf
 }
 .sunrs {
-    background: #000000b9;
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     color: white;
     padding: 1.1em;
     border-radius: 45px;
     height: 86px;
     width: 442px;
     position: relative;
-    top: -21px;
-    left: 12px;
+    top: -162px;
+    left: 544px;
 }
 canvas#sunriseset {
     top: 12px;
