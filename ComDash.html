@@ -24,6 +24,19 @@
             });
         </script>
 
+        <div class="sidebar">
+            <div class="baricons">
+                <img src="icon/ComDash.png" id="Comicon" />
+                <div id="Dashbutton">
+                    <a href="./ComDash.html"><img src="icon/dashboard.png" style="color:white;"/></a>
+                </div>
+                <div id="Setbutton">
+                    <a href="./Settings.html"><img src="icon/settings.png"/></a>
+                </div>
+            </div>
+        </div>
+            
+
         <div id="ComDash">
             <h1>COMDASH</h1>
         </div>
@@ -62,12 +75,6 @@
             </div>
             <div class="month-list"></div>
         </div>
-
-
-        <div class="sunrs">
-            <canvas id="sunriseset" width=400 height=90></canvas>
-        </div>
-    
     
         <div class="weathercard">
             <div class="search">
@@ -148,12 +155,12 @@
     
         <div class="taskcard">
             <div class="form-inline">
-                <label class="labelet">Enter your tasks below: </label>
-                <br/>
-                <input id="list" class="form-control" placeholder="Enter Your Tasks Here"/>
-                <button class="btn btn-success" onclick="addList()"><svg stroke="currentColor" fill="currentColor"
-                        stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297" height="1em"
-                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                <label class="labelet">Enter your tasks below:</label>
+                <br />
+                <input type="text" id="inputTodo" placeholder="Enter Your Tasks Here"/>
+                <button type="submit" id="addTodo" class="btn btn-success" onclick="addTodo()"><svg stroke="currentColor"
+                        fill="currentColor" stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297"
+                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                         <defs></defs>
                         <path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z" pId="10298"></path>
                         <path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z" pId="10299"></path>
@@ -161,8 +168,7 @@
                 </button>
             </div>
             <div class="col-md-6">
-                <ul class="list-group" id="result" style="word-wrap:break-word;">
-                </ul>
+                <ol id="Tasklist" style="word-wrap:break-word;"></ol>
             </div>
         </div>
     
@@ -206,9 +212,6 @@
             </button>
             </div>
         </div>
-    
-        
-        <div class="footer"><a href="https://epicalable.github.io/epicalable.html" target="_blank">ComDash (C)Epicalable 2023</a></div>
     
     </body>
 

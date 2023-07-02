@@ -26,17 +26,19 @@ Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-spee
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-1. A sleeker and a minimalistic UI for a better UX.
-   1a. Addded Translucent glass effects on cards for better asthetics.
-   1b. New Internet notifier to inform you about your connectivity.
-2. Some backend code improvemets.
-3. New stock pictures and updated Readme.md
+1. Now your tasks will be remembered on your browser's local storage even if
+   you leave the page and return back. So now you would not have to type your
+   tasks again if you leave.
+2. New TaskBar!!! (Currently the logos are not finalised.)
+   2a. Access the Settings page to easily edit API Keys and your locations for 
+       ComDash to retreive data.
+3. Some backend code improvemets.
 
 Note to stakeholders:
 We are currently taking a brake from almost doing commits daily but do not 
 worry as we have decided to add a whole set of new features first and then push
 out the commit for you to test them out.
-Also now we will be able to take our time and develop other Epicalable projects.
+Also now we will be able to take our time and develop other Epicalable projects
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -47,7 +49,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 22-June-2023 19:10HRS (Singapore Standard Time)
+Last Updated: 2-July-2023 15:45HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

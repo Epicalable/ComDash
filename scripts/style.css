@@ -18,7 +18,7 @@ body {
     height: 231px;
     width: 418px;
     position: absolute;
-    left: 22px;
+    left: 88px;
     top: 111px;
 }
 .weather {
@@ -96,7 +96,7 @@ h1.temp {
     height: 728px;
     width: 500px;
     border-radius: 70px;
-    top: -416px;
+    top: -330px;
     left: 1067px;
 }
 label.newslabel {
@@ -145,12 +145,11 @@ input.news-search-bar {
     padding: 2em;
     color: white;
     display: flex;
-    overflow-y: auto;
     height: 410px;
     width: 423px;
     border-radius: 70px;
     flex-direction: column;
-    left: 550px;
+    left: 580px;
     top: 281px;
     position: absolute;
 }
@@ -158,16 +157,16 @@ label.labelet {
     left: 6px;
     position: relative;
 }
-input#list {
+input#inputTodo {
     border: none;
     outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
     background: rgb(0 0 0 / 0.41);
     color: white;
-    font-size: 100%;
-    width: 323px;
+    width: 300px;
     height: 15px;
+    left: 4px;
 }
 .col-md-6 {
     display: list-item;
@@ -188,9 +187,9 @@ input#list {
     padding: 2em;
     position: relative;
     top: 400px;
-    left: 12px;
+    left: 80px;
     width: 471px;
-    height: 307px;
+    height: 336px;
     box-sizing: border-box;
 }
 .calendar-header {
@@ -252,11 +251,11 @@ input#list {
     backdrop-filter: blur(11.5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 2em;
-    border-radius: 70px;
+    border-radius: 40px;
     display: flex;
     justify-content: center;
-    top: 13px;
-    left: 550px;
+    top: 105px;
+    left: 580px;
     position: absolute;
     height: 77px;
     width: 423px;
@@ -278,51 +277,53 @@ input.googlesearch-bar {
 div#ComDash {
     font-size: 31px;
     top: -24px;
-    left: 92px;
+    left: 155px;
     color: #a49b9b;
     position: absolute;
-}
-.footer {
-    position: fixed;
-    text-align: left;
-    color: white;
-    bottom: -603px;
-    left: -530px;
-}
-a:link {
-    color: white;
-}
-a:visited {
-    color: white;
-}
-a:hover {
-    color: #545458;
 }
 /*End of Footer Css Code*/
 
 
 
-/*Start of Skyvisual Css Code*/
-canvas {
-    background: #acf
-}
-.sunrs {
+.sidebar {
     background: rgba(0, 0, 0, 0.30);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(11.5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    color: white;
-    padding: 1.1em;
-    border-radius: 45px;
-    height: 86px;
-    width: 442px;
-    position: relative;
-    top: -162px;
-    left: 544px;
-}
-canvas#sunriseset {
-    top: 12px;
-    left: 35px;
+    height: 100%;
+    width: 65px;
     position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    color: white;
 }
-/*End of Skyvisual Css Code*/
+
+.sidebar div {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+}
+
+.baricons {
+    left: 1px;
+    position: relative;
+    top: -40px;
+}
+
+img#Comicon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: -2px;
+}
+
+div#Dashbutton {
+    left: -10px;
+    position: relative;
+}
+
+div#Setbutton {
+    left: -10px;
+    position: relative;
+}

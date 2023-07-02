@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Settings</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1614597396930-cd6760b99f7c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY4ODE5MzY3Mw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow-y: hidden;
+            margin: 0px;
+        }
+        
+        .Settings {
+            background: rgba(0, 0, 0, 0.30);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(11.5px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 2em;
+            border-radius: 50px;
+            max-width: 415px;
+            width: 100%;
+            max-height: 300px;
+        }
+        
+        input#weatherbar {
+            border: none;
+            outline: none;
+            padding: 0.5em;
+            width: 276px;
+            border-radius: 18px;
+            background: #7c7c7c2b;
+            color: white;
+            font-size: 86%;
+        }
+        
+        input#newsbar {
+            border: none;
+            outline: none;
+            padding: 0.5em;
+            width: 276px;
+            border-radius: 18px;
+            background: #7c7c7c2b;
+            color: white;
+            font-size: 86%;
+        }
+        
+        input#citybar {
+            border: none;
+            outline: none;
+            padding: 0.5em;
+            width: 276px;
+            border-radius: 18px;
+            background: #7c7c7c2b;
+            color: white;
+            font-size: 86%;
+        }
+        
+        input#countrybar {
+            border: none;
+            outline: none;
+            padding: 0.5em;
+            width: 276px;
+            border-radius: 18px;
+            background: #7c7c7c2b;
+            color: white;
+            font-size: 86%;
+        }
+
+        .sidebar {
+            background: rgba(0, 0, 0, 0.30);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(11.5px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            height: 100%;
+            width: 65px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding-top: 40px;
+            color: white;
+        }
+        
+        .sidebar div {
+            padding: 8px;
+            font-size: 24px;
+            display: block;
+        }
+        
+        .baricons {
+            left: 1px;
+            position: relative;
+            top: -40px;
+        }
+        
+        img#Comicon {
+            position: relative;
+            height: 50px;
+            width: 50px;
+            left: -2px;
+        }
+        
+        div#Dashbutton {
+            left: -10px;
+            position: relative;
+        }
+        
+        div#Setbutton {
+            left: -10px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="baricons">
+            <img src="icon/ComDash.png" id="Comicon" />
+            <div id="Dashbutton">
+                <a href="./ComDash.html"><img src="icon/dashboard.png" style="color:white;" /></a>
+            </div>
+            <div id="Setbutton">
+                <a href="./Settings.html"><img src="icon/settings.png" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Settings">
+        <div class="weather-inline">
+            <label>OpenWeatherApi :</label>
+            <br>
+            <input type="text" id="weatherbar" />
+        </div>
+        <br>
+        <div class="news-inline">
+            <label>NewsApi :</label>
+            <br>
+            <input type="text" id="newsbar" />
+        </div>
+        <br>
+        <div class="city-inline">
+            <label>Your City :</label>
+            <br>
+            <input type="text" id="citybar" />
+        </div>
+        <br>
+        <div class="country-inline">
+            <label>Your Country :</label>
+            <br>
+            <input type="text" id="countrybar" />
+        </div>
+        <br>
+        <button type="button" onclick="Save()">Save</button>
+    </div>
+</body>
+
+<script>
+    function weatherDB() {
+        window.localStorage.setItem("OpenWeatherApi", "b190a0605344cc4f3af08d0dd473dd25");
+    }
+
+    function newsDB() {
+        window.localStorage.setItem("NewsApi", "2c925d05bbe34d23a7fb4f425749d9b9");
+    }
+
+    function cityDB() {
+        window.localStorage.setItem("City", "Singapore");
+    }
+
+    function countDB() {
+        window.localStorage.setItem("Country", "SG");
+    }
+
+
+    var weather = window.localStorage.getItem('OpenWeatherApi');
+    if (weather == null)
+        weatherDB()
+    document.getElementById('weatherbar').value = weather;
+
+    var news = window.localStorage.getItem('NewsApi');
+    if (news == null)
+        newsDB()
+    document.getElementById('newsbar').value = news;
+
+    var cty = window.localStorage.getItem('City');
+    if (cty == null)
+        cityDB()
+    document.getElementById('citybar').value = cty;
+
+    var count = window.localStorage.getItem('Country');
+    if (count == null)
+        countDB()
+    document.getElementById('countrybar').value = count;
+
+    function Save() {
+        weather = document.getElementById('weatherbar').value
+        window.localStorage.setItem("OpenWeatherApi", weather);
+        news = document.getElementById('newsbar').value
+        window.localStorage.setItem("NewsApi", news);
+        city = document.getElementById('citybar').value
+        window.localStorage.setItem("City", city);
+        count = document.getElementById('countrybar').value
+        window.localStorage.setItem("Country", count);
+    }
+</script>
+
+</html>

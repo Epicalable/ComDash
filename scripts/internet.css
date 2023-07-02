@@ -2,7 +2,7 @@
 
 .wrapper {
     position: absolute;
-    left: 0px;
+    left: 50px;
     animation: show_toast 1s ease forwards;
 }
 @keyframes show_toast {
@@ -38,7 +38,7 @@
     background: #fff;
     padding: 20px 15px 20px 20px;
     border-radius: 10px;
-    border-left: 5px solid #2ecc71;
+    border-left: 5px solid #1c8e4b;
     box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
     width: 430px;
     display: flex;
@@ -46,7 +46,7 @@
     justify-content: space-between;
 }
 .wrapper .toast.offline {
-    border-color: #ccc;
+    border-color: #9c1818;
 }
 .toast .content {
     display: flex;
@@ -60,10 +60,10 @@
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
-    background: #2ecc71;
+    background: #1c8e4b;
 }
 .toast.offline .content .icon {
-    background: #ccc;
+    background: #9c1818;
 }
 .content .details {
     margin-left: 15px;
