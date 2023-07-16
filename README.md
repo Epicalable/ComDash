@@ -6,7 +6,7 @@
 
  **This Program Is CPU-Intensive Please Make Sure That You're Using A Mid To High Range PC.**  
  
-<img width="300" src="https://github.com/Epicalable/ComDash/assets/69076784/e61ae01e-2055-45dc-a64a-b4c0098f014b"> <img width="300" src="https://github.com/Epicalable/ComDash/assets/69076784/0da0ea8a-4884-4b69-9fd4-1e668bed189b"> <img width="300" src="https://github.com/Epicalable/ComDash/assets/69076784/8428a947-ed1d-4aff-9910-7929fc4ca041">
+<img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/e61ae01e-2055-45dc-a64a-b4c0098f014b"> <img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/0da0ea8a-4884-4b69-9fd4-1e668bed189b"> <img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/8428a947-ed1d-4aff-9910-7929fc4ca041">
 
 
 ## Table Of Contents
@@ -50,7 +50,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 16-July-2023 15:30HRS (Singapore Standard Time)
+Last Updated: 16-July-2023 15:35HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -90,12 +90,12 @@ Upon opening, by default you can reteive news and weather using pre-existing API
 
 ## Other Functions Available
 Apart from APIs to retreive information ComDash also comes with some more functionalities for users to use:-
-   1. Tasks-Tracker:  
-   Comdash allows you to track tasks which will be stored on your browser's local storage (Introduced in commit e42da78 ) to prevent erasing the tasks if you exit or reloaad the page.  
+1. Tasks-Tracker:  
+Comdash allows you to track tasks which will be stored on your browser's local storage (Introduced in commit e42da78 ) to prevent erasing the tasks if you exit or reloaad the page.  
    <img width="100" alt="tasks" src="https://github.com/Epicalable/ComDash/assets/69076784/0b99e77f-5ca5-474b-aea2-d594fb5a0282">  
    
-   2. Calender:  
-   Comdash has an in-built calander which allows you see what date it is.  
+2. Calender:  
+Comdash has an in-built calander which allows you see what date it is.  
    <img width="100" alt="calender" src="https://github.com/Epicalable/ComDash/assets/69076784/e7dc2077-9a49-436d-9727-a7ae543ef9bc">
 
 
