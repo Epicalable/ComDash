@@ -31,14 +31,15 @@ body {
     align-items: center;
     justify-content: center;
     top: 18px;
+    left: 40px;
     position: absolute;
 }
 button {
     margin: 0.5em;
     border-radius: 50%;
     border: none;
-    height: 32px;
-    width: 34px;
+    height: 31px;
+    width: 33px;
     background: #545454;
     color: white;
     cursor: pointer;
@@ -133,6 +134,9 @@ input.news-search-bar {
     padding: 2em;
     color: azure;
 }
+a {
+    color: azure;
+}
 /*End of NewsCard Css Code*/
 
 
@@ -152,6 +156,10 @@ input.news-search-bar {
     left: 580px;
     top: 281px;
     position: absolute;
+}
+.form-inline {
+    left: 25px;
+    position: relative;
 }
 label.labelet {
     left: 6px;
@@ -257,7 +265,7 @@ input#inputTodo {
     top: 105px;
     left: 580px;
     position: absolute;
-    height: 77px;
+    height: 110px;
     width: 423px;
 }
 input.googlesearch-bar {
@@ -284,7 +292,7 @@ div#ComDash {
 /*End of Footer Css Code*/
 
 
-
+/*Start of Sidebar Css Code*/
 .sidebar {
     background: rgba(0, 0, 0, 0.30);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -296,34 +304,33 @@ div#ComDash {
     left: 0;
     top: 0;
     padding-top: 40px;
-    color: white;
 }
-
 .sidebar div {
     padding: 8px;
     font-size: 24px;
     display: block;
 }
-
 .baricons {
     left: 1px;
     position: relative;
     top: -40px;
 }
-
 img#Comicon {
     position: relative;
     height: 50px;
     width: 50px;
     left: -2px;
 }
-
 div#Dashbutton {
     left: -10px;
     position: relative;
 }
-
 div#Setbutton {
     left: -10px;
     position: relative;
 }
+.baraboutus {
+    bottom: 25px;
+    position: absolute;
+}
+/*End of Sidebar Css Code*/

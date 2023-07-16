@@ -4,19 +4,18 @@
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Epicalable/ComDash) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Epicalable/ComDash) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Epicalable/ComDash/issues)
 
-Note: This project is currently still In developement and the current product shown might not reflect the final product.
-
  **This Program Is CPU-Intensive Please Make Sure That You're Using A Mid To High Range PC.**  
  
-<img width="400" src="https://github.com/Epicalable/ComDash/assets/69076784/4ccb2f19-778d-4df7-8c23-fae20c2b04cb">
+<img width="300" src="https://github.com/Epicalable/ComDash/assets/69076784/e61ae01e-2055-45dc-a64a-b4c0098f014b"> <img width="300" src="https://github.com/Epicalable/ComDash/assets/69076784/0da0ea8a-4884-4b69-9fd4-1e668bed189b"> <img width="300" src="https://github.com/Epicalable/ComDash/assets/69076784/8428a947-ed1d-4aff-9910-7929fc4ca041">
 
-(Current progress of ComDash)
 
 ## Table Of Contents
 - [What's New?](#whats-new)
 - [Introduction to ComDash](#introduction-to-comdash)
 - [Running ComDash](#running-comdash)
-- [What APIs should I subscribe to?](#what-apis-should-i-subscribe-to)
+- [What APIs Should I Subscribe To?](#what-apis-should-i-subscribe-to)
+  * [Where Do I Paste The APIs?](#where-do-i-paste-the-apis)
+- [Other Functions Available](#other-functions-available)
 - [Issues](#issues)
 - [License](#license)
 
@@ -26,18 +25,20 @@ Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-spee
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-1. Now your tasks will be remembered on your browser's local storage even if
-   you leave the page and return back. So now you would not have to type your
-   tasks again if you leave.
-2. New TaskBar!!! (Currently the logos are not finalised.)
-   2a. Access the Settings page to easily edit API Keys and your locations for 
-       ComDash to retreive data.
-3. Some backend code improvemets.
+1. New Taskbar!!!
+   1a. New Refurbished Taskbar Icons.
+   1b. Access the Settings page to easily edit API Keys and your 
+       locations for ComDash to retrieve necessary data.
+   1c. New About-us button to link our GitHub profile.
+2. Added Buttons in settings to better help first users.
+3. New Buttons in links-card to Reddit and Instagram.
+4. Some backend code improvements. 
+5. Revamped Readme images.
 
 Note to stakeholders:
-We are currently taking a brake from almost doing commits daily but do not 
-worry as we have decided to add a whole set of new features first and then push
-out the commit for you to test them out.
+We are currently taking a brake from almost doing commits daily 
+but do not worry as we have decided to add a whole set of 
+new features first and then push out the commit for you to test them out.
 Also now we will be able to take our time and develop other Epicalable projects
 
 Code Checks Manifest:-
@@ -49,7 +50,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 2-July-2023 15:45HRS (Singapore Standard Time)
+Last Updated: 16-July-2023 15:30HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -65,27 +66,41 @@ ComDash is currently still under development so stay tuned to latest updates and
 ## Running ComDash
 To run ComDash all you'll need to do is to open the ComDash.html file in your browser.  
 Make sure that you are connected to the internet for most of our fuctions to work.  
-<img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/56c7a803-8be0-43f2-952a-e75bd9d96a6c">  
+<img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/9f0814b1-0703-4dfe-bac1-2b683555e231">  
 If you are not connected to the internet you will be shown with this message.  
-<img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/7b15c5fe-e789-4830-9a81-988308c47d75">  
+<img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/33e0d1fe-3566-4b7e-966f-510631d9656c">  
 
 
-## What APIs should I subscribe to?
+## What APIs Should I Subscribe To?
 Upon opening, by default you can reteive news and weather using pre-existing APIs but if you want it to be personalised then it is best to activate an API. To do that you will need to head to:
 
 1. https://newsapi.org/ : For ComDash To Get Current News Headlines For You And Display In NewsCard.  
-    <img width="100" src="https://github.com/Epicalable/ComDash/assets/76218539/23b19946-b2a1-4084-bcb1-84fe1c225da4"><img width="101" src="https://github.com/Epicalable/ComDash/assets/76218539/afa10e6e-a67b-409c-a930-ac00c84499b9"><img width="100" src="https://github.com/Epicalable/ComDash/assets/76218539/da0b5529-2223-4b53-8486-82af8db1e24c">
+    <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/b20390a3-5a31-4492-87b7-b0f3e1fbbe36"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/58815274-3355-4dc4-ba62-b6425c953408"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/cb408cb7-a146-4183-8eea-9edbddc593af">
 
-2. https://openweathermap.org/ : For ComDash To Get current Weather information For You And Display In WeatherCard .  
-   <img width="100" src="https://github.com/Epicalable/ComDash/assets/76218539/a94fdc6e-f119-445d-9061-a322c4b283b7"><img width="100" src="https://github.com/Epicalable/ComDash/assets/76218539/d9b06afe-9378-437f-9d84-c510c4663e24"><img width="100" src="https://github.com/Epicalable/ComDash/assets/76218539/f916c41c-e3d9-4645-b840-574d06b2c452">
+2. https://openweathermap.org/ : For ComDash To Get current Weather information For You And Display In WeatherCard.  
+   <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/323996c8-f861-41b6-bae6-acaa7640039c"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/4179a4a7-d788-41a7-98fe-228f68709458"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/92b31037-6279-4df3-b5fb-3fbb474b98f8">
 
 3. https://unsplash.com/developers : For ComDash to get background wallpaper on different cities based on which city's weather users want to fetch. (Users do not need to subscribe to this as there is no api key and it's already bundeled into the code for you.)
 
-For the first 2 websites once registered you will be provided with an API key, Users should then copy the API key and paste it into the Javascript code.
+   #### Where Do I Paste The APIs?
+   <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/293cbb2e-96f9-4dc7-97c1-8d02be0d1256">
+
+   For the first 2 websites (NewsAPI and OpenWeatherAPI) once registered you will be provided with an API key, Users should then copy the API key and paste it in the respective input-bars present in the settings page (accessible through the taskbar on the left side).
+
+
+## Other Functions Available
+Apart from APIs to retreive information ComDash also comes with some more functionalities for users to use:-
+   1. Tasks-Tracker:  
+   Comdash allows you to track tasks which will be stored on your browser's local storage (Introduced in commit e42da78 ) to prevent erasing the tasks if you exit or reloaad the page.  
+   <img width="100" alt="tasks" src="https://github.com/Epicalable/ComDash/assets/69076784/0b99e77f-5ca5-474b-aea2-d594fb5a0282">  
+   
+   2. Calender:  
+   Comdash has an in-built calander which allows you see what date it is.  
+   <img width="100" alt="calender" src="https://github.com/Epicalable/ComDash/assets/69076784/e7dc2077-9a49-436d-9727-a7ae543ef9bc">
 
 
 ## Issues
-As this project is still in development and testing stage, if you run into any issues while operating or have any suggestions or features, please feel free to drop by our [issues](https://github.com/Epicalable/ComDash/issues) section and open a issue and we'll respond within 2-4 working days, Thank you for your understanding.
+As this project is still in constant development, if you run into any issues while operating or have any suggestions or features, please feel free to drop by our [issues](https://github.com/Epicalable/ComDash/issues) section and open a issue and we'll respond within 2-4 working days, Thank you for your understanding.
 
 
 ## License

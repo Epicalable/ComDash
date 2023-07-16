@@ -198,4 +198,10 @@ function getGithub() {
 function getYoutube() {
     myWindow = window.open("https://www.youtube.com/", "_blank")
 }
+function getReddit() {
+    myWindow = window.open("https://www.reddit.com/", "_blank")
+}
+function getInsta() {
+    myWindow = window.open("https://www.instagram.com/", "_blank")
+}
 /*End of LinksCard JS Code*/
