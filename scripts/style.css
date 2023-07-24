@@ -321,10 +321,7 @@ img#Comicon {
     width: 50px;
     left: -2px;
 }
-div#Dashbutton {
-    left: -10px;
-    position: relative;
-}
+div#Dashbutton,
 div#Setbutton {
     left: -10px;
     position: relative;

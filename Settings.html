@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./icon/ComDash.png">
+    <link rel="icon" type="image/x-icon" href="./scripts/icon/ComDash.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -44,37 +44,7 @@
             width: 100%;
             max-height: 430px;
         }
-        input#weatherbar {
-            border: none;
-            outline: none;
-            padding: 0.5em;
-            width: 276px;
-            border-radius: 18px;
-            background: #7c7c7c2b;
-            color: white;
-            font-size: 86%;
-        }
-        input#newsbar {
-            border: none;
-            outline: none;
-            padding: 0.5em;
-            width: 276px;
-            border-radius: 18px;
-            background: #7c7c7c2b;
-            color: white;
-            font-size: 86%;
-        }
-        input#citybar {
-            border: none;
-            outline: none;
-            padding: 0.5em;
-            width: 276px;
-            border-radius: 18px;
-            background: #7c7c7c2b;
-            color: white;
-            font-size: 86%;
-        }
-        input#countrybar {
+        input {
             border: none;
             outline: none;
             padding: 0.5em;
@@ -112,10 +82,7 @@
             width: 50px;
             left: -2px;
         }
-        div#Dashbutton {
-            left: -10px;
-            position: relative;
-        }
+        div#Dashbutton,
         div#Setbutton {
             left: -10px;
             position: relative;
@@ -131,17 +98,17 @@
 
     <div class="sidebar">
         <div class="baricons">
-            <img src="icon/ComDash.png" id="Comicon"/>
+            <img src="./scripts/icon/ComDash.png" id="Comicon"/>
             <div id="Dashbutton">
-                <a href="./ComDash.html" title="DashBoard"><img src="icon/dashboard.png"/></a>
+                <a href="./ComDash.html" title="DashBoard"><img src="./scripts/icon/dashboard.png"/></a>
             </div>
             <div id="Setbutton">
-                <a href="./Settings.html" title="Settings"><img src="icon/settings.png"/></a>
+                <a href="./Settings.html" title="Settings"><img src="./scripts/icon/settings.png"/></a>
             </div>
         </div>
         <div class="baraboutus">
             <div id="Setbutton">
-                <a href="https://github.com/Epicalable/ComDash" title="About Us"><img src="icon/aboutus.png"/></a>
+                <a href="https://github.com/Epicalable/ComDash" title="About Us"><img src="./scripts/icon/aboutus.png"/></a>
             </div>
         </div>
     </div>
@@ -221,19 +188,15 @@
     function weatherDB() {
         window.localStorage.setItem("OpenWeatherApi", "b190a0605344cc4f3af08d0dd473dd25");
     }
-
     function newsDB() {
         window.localStorage.setItem("NewsApi", "2c925d05bbe34d23a7fb4f425749d9b9");
     }
-
     function cityDB() {
         window.localStorage.setItem("City", "Singapore");
     }
-
     function countDB() {
         window.localStorage.setItem("Country", "SG");
     }
-
 
     var weather = window.localStorage.getItem('OpenWeatherApi');
     if (weather == null)

@@ -6,7 +6,7 @@
 
  **This Program Is CPU-Intensive Please Make Sure That You're Using A Mid To High Range PC.**  
  
-<img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/e61ae01e-2055-45dc-a64a-b4c0098f014b"> <img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/0da0ea8a-4884-4b69-9fd4-1e668bed189b"> <img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/8428a947-ed1d-4aff-9910-7929fc4ca041">
+<img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/e61ae01e-2055-45dc-a64a-b4c0098f014b"><img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/0da0ea8a-4884-4b69-9fd4-1e668bed189b"><img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/6089c530-e6e3-4883-8eb2-1092de784677">
 
 
 ## Table Of Contents
@@ -25,21 +25,9 @@ Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-spee
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-1. New Taskbar!!!
-   1a. New Refurbished Taskbar Icons.
-   1b. Access the Settings page to easily edit API Keys and your 
-       locations for ComDash to retrieve necessary data.
-   1c. New About-us button to link our GitHub profile.
-2. Added Buttons in settings to better help first users.
-3. New Buttons in links-card to Reddit and Instagram.
-4. Some backend code improvements. 
-5. Revamped Readme images.
-
-Note to stakeholders:
-We are currently taking a brake from almost doing commits daily 
-but do not worry as we have decided to add a whole set of 
-new features first and then push out the commit for you to test them out.
-Also now we will be able to take our time and develop other Epicalable projects
+1. Minor code edits and improvements.
+2. File Directory Changes.
+3. Update Readme.md
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -50,7 +38,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 16-July-2023 15:35HRS (Singapore Standard Time)
+Last Updated: 24-July-2023 12:55HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -83,7 +71,7 @@ Upon opening, by default you can reteive news and weather using pre-existing API
 3. https://unsplash.com/developers : For ComDash to get background wallpaper on different cities based on which city's weather users want to fetch. (Users do not need to subscribe to this as there is no api key and it's already bundeled into the code for you.)
 
    #### Where Do I Paste The APIs?
-   <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/293cbb2e-96f9-4dc7-97c1-8d02be0d1256">
+   <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/a7414655-2c4d-4436-9652-8c659ecb967f">
 
    For the first 2 websites (NewsAPI and OpenWeatherAPI) once registered you will be provided with an API key, Users should then copy the API key and paste it in the respective input-bars present in the settings page (accessible through the taskbar on the left side).
 
