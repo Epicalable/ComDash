@@ -25,9 +25,7 @@ Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-spee
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-1. Minor code edits and improvements.
-2. File Directory Changes.
-3. Update Readme.md
+1. Update Readme.md
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -38,7 +36,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 24-July-2023 12:55HRS (Singapore Standard Time)
+Last Updated: 10-Febuary-2024 20:39HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -104,11 +102,5 @@ This will be helpful for us as users will know it's original source and about ou
 Please also refer to LICENSE file for clarifications.  
 Thank you for your kind co-operation :-)
 
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/Epicalable/)
-[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://github.com/MahaMohan/)
-
-[![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://GitHub.com/) 
-[![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](https://github.com/Epicalable/)
-
-ComDash Copyright (C) Epicalable 2023  
+ComDash Copyright (C) Epicalable 2024  
 All Rights Reserved
