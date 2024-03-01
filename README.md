@@ -4,13 +4,14 @@
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Epicalable/ComDash) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Epicalable/ComDash) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Epicalable/ComDash/issues)
 
- **This Program Is CPU-Intensive Please Make Sure That You're Using A Mid To High Range PC.**  
+**This Program Is CPU-Intensive Please Make Sure That You're Using A Mid To High Range PC.**  
  
 <img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/e61ae01e-2055-45dc-a64a-b4c0098f014b"><img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/0da0ea8a-4884-4b69-9fd4-1e668bed189b"><img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/6089c530-e6e3-4883-8eb2-1092de784677">
 
 
 ## Table Of Contents
 - [What's New?](#whats-new)
+- [Running ComDash On Your Computer](#running-comdash-on-your-local-computer)
 - [Introduction to ComDash](#introduction-to-comdash)
 - [Running ComDash](#running-comdash)
 - [What APIs Should I Subscribe To?](#what-apis-should-i-subscribe-to)
@@ -36,11 +37,28 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 10-Febuary-2024 20:39HRS (Singapore Standard Time)
+Last Updated: 1-March-2024 22:15HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
 
+
+## Running ComDash On Your Local Computer
+ComDash can be executed as a Web-App by running the html file on a localhost on your computer without hosting it on a web-server online by following these steps:
+
+1. Click on "Start" and go to or search for "Control Panel" and search for "Programs and Features".
+
+2. Open "Programs and Features" and on the left pane click on "Turn Windows Features on or off".
+
+*  Note: You can also search for "Turn Windows Features on or off" on your computer's search-bar for easier access.
+
+3. Scroll down to find "Internet Information Server" and click on the box to enable it to use Localhost functionality on your computer.
+
+4. Place the Comdash folder you've downloaded inside "C:/inetpub/wwwroot" folder located on the C: drive.
+
+5. Now head to your browser and type this in the address bar: "http://127.0.0.1/ComDash/ComDash.html" and the web-application should be up and running properly.
+
+For further reading/referencing: https://gist.github.com/jgravois/5e73b56fa7756fd00b89
 
 ## Introducing ComDash
 Last year our startup announced Comdash: an all-in-one web-based Dashboard to get essential day-to-day information for users built using Html5 for frontend structure, CSS3 for webpage styling and JavaScript for background infomation retreival processes.  
