@@ -1,3 +1,6 @@
+let bgim = window.localStorage.getItem("BackG");
+document.body.style.backgroundImage = `url('`+bgim+`')`;
+
 /*Start of WeatherCard JS Code*/
 let weather = {
     apiKey: window.localStorage.getItem('OpenWeatherApi'),
@@ -26,7 +29,6 @@ let weather = {
         document.querySelector(".humidity").innerText = `Humidity: ${humidity}%`;
         document.querySelector(".wind").innerText = `Wind Speed: ${speed} km/h`;
         document.querySelector(".weather").classList.remove("loading");
-        document.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${name}')`;
     },
     search: function () {
         this.fetchWeather(document.getElementById('weather-search-bar').value);
@@ -48,6 +50,50 @@ function OpenWeatherHelp() {
     myWindow = window.open("https://openweathermap.org/weather-conditions#Icon-list", "_blank")
 }
 /*End of WeatherCard JS Code*/
+
+
+window.onload = getNewsnow();
+
+/*Start of NewsCard JS Code*/
+function getNewsnow() {
+    // initialze of the variables 
+    let apiKey = window.localStorage.getItem('NewsApi');
+    // grab the news container
+    let newsAccordion = document.getElementById('newsAccordion');
+    // create the get request
+    const xhr = new XMLHttpRequest();
+    let term = window.localStorage.getItem("Country");
+    if (term == "") {
+        alert("Please Enter Country Abbrevation (EX.SG,US,AU) Before Requesting For News Headlines!");
+    } else {
+        // use for the post request 
+        xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${term}&apiKey=${apiKey}&pageSize=100`, true)
+        // when response is ready
+        xhr.onload = function () {
+            let json = JSON.parse(this.responseText);
+            let articles = json.articles;
+            console.log(articles);
+            let newsHtml = "";
+            articles.forEach(function (element, index) {
+                let news = `<div class="newscard">
+                                    <div class="card-header" id="heading${index}">
+                                        <h2 class="mb-0" color="white">${element["title"]}</h2>
+                                    </div>
+                                    <div id="collapse${index}" class="collapse" aria-labelledby="heading${index}" data-parent="#newsAccordion">
+                                        <div class="card-body"><a href="${element['url']}" target="_blank"> Read more here </a> </div>
+                                    </div>
+                            </div>`;
+                newsHtml += news;
+            });
+            newsAccordion.innerHTML = newsHtml;
+        }
+        xhr.send()
+    }
+}
+function NewsApiHelp() {
+    myWindow = window.open("https://newsapi.org/docs/endpoints/top-headlines", "_blank")
+}
+/*End of NewsCard JS Code*/
 
 
 /*Start of NewsCard JS Code*/

@@ -26,7 +26,15 @@ Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-spee
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-1. Update Readme.md
+ALERT!!!
+1. Due to the closure of source.unsplash.com, our team has found a temporary work-around 
+which allows the User to copy the image's URL and paste it in the settings page. This is 
+a temporary measure taken by us to figure out integrating Unsplash's API.
+
+1a. Settings page has a new input-bar for placing your background-image's URL.
+
+2. Now on loading ComDash the News headlines section will display the headlines with 
+respect to User's country.
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -37,7 +45,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 1-March-2024 22:15HRS (Singapore Standard Time)
+Last Updated: 8-August-2024 21:45HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -64,8 +72,6 @@ For further reading/referencing: https://gist.github.com/jgravois/5e73b56fa7756f
 Last year our startup announced Comdash: an all-in-one web-based Dashboard to get essential day-to-day information for users built using Html5 for frontend structure, CSS3 for webpage styling and JavaScript for background infomation retreival processes.  
 So what does ComDash do? Well ComDash can retrieve news, weather, tasks and some more cool features coming soon.
 
-ComDash is currently still under development so stay tuned to latest updates and 'star' and 'watch' this repository. 
-
 
 ## Running ComDash
 To run ComDash all you'll need to do is to open the ComDash.html file in your browser.  
@@ -84,7 +90,6 @@ Upon opening, by default you can reteive news and weather using pre-existing API
 2. https://openweathermap.org/ : For ComDash To Get current Weather information For You And Display In WeatherCard.  
    <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/323996c8-f861-41b6-bae6-acaa7640039c"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/4179a4a7-d788-41a7-98fe-228f68709458"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/92b31037-6279-4df3-b5fb-3fbb474b98f8">
 
-3. https://unsplash.com/developers : For ComDash to get background wallpaper on different cities based on which city's weather users want to fetch. (Users do not need to subscribe to this as there is no api key and it's already bundeled into the code for you.)
 
    #### Where Do I Paste The APIs?
    <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/a7414655-2c4d-4436-9652-8c659ecb967f">
