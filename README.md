@@ -23,18 +23,19 @@
 
 ## What's New?
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
+
+<img width="250" src="https://github.com/user-attachments/assets/6dea592c-11fb-4700-a39d-f5de3de0467d">  
+
+Check Out Our Update Here: https://www.youtube.com/watch?v=tuF0uX9iNqA
+
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-ALERT!!!
-1. Due to the closure of source.unsplash.com, our team has found a temporary work-around 
-which allows the User to copy the image's URL and paste it in the settings page. This is 
-a temporary measure taken by us to figure out integrating Unsplash's API.
-
-1a. Settings page has a new input-bar for placing your background-image's URL.
-
-2. Now on loading ComDash the News headlines section will display the headlines with 
-respect to User's country.
+1. Due to the closure of source.unsplash.com, our team has finally found a way on integrating Unsplash's API. 
+   Users would henceforth need to register for an Api key to get images from Unsplash.
+2. Country input bar has been removed from the Settings page.
+3. News-card has a new look and feel: 
+   3a. New drop-down box has been added to select the country and another for News topics.
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -45,7 +46,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 8-August-2024 21:45HRS (Singapore Standard Time)
+Last Updated: 1-November-2024 20:15HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

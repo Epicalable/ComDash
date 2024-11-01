@@ -133,7 +133,7 @@
         </div>
         <br>
         <div class="news-inline">
-            <label>NewsApi :</label>
+            <label>GNews Api :</label>
             <br>
             <input type="text" id="newsbar"/>
             <button type="button" onclick="NewsApiHelp()" title="NewsAPI">
@@ -164,27 +164,10 @@
         </div>
         <br>
         <div class="country-inline">
-            <label>Your Country :</label>
-            <br>
-            <input type="text" id="countrybar"/>
-            <button type="button" onclick="alert('Enter country abbrevation Ex. sg, us, au, fr')" title="Help">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 6C9.831 6 8.066 7.765 8.066 9.934h2C10.066 8.867 10.934 8 12 8s1.934.867 1.934 1.934c0 .598-.481 1.032-1.216 1.626-.255.207-.496.404-.691.599C11.029 13.156 11 14.215 11 14.333V15h2l-.001-.633c.001-.016.033-.386.441-.793.15-.15.339-.3.535-.458.779-.631 1.958-1.584 1.958-3.182C15.934 7.765 14.169 6 12 6zM11 16H13V18H11z">
-                    </path>
-                    <path
-                        d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8s3.589-8,8-8 s8,3.589,8,8S16.411,20,12,20z">
-                    </path>
-                </svg>
-            </button>
-        </div>
-        <br>
-        <div class="country-inline">
-            <label>Background-Image :</label>
+            <label>unsplash API :</label>
             <br>
             <input type="text" id="bgbar"/>
-            <button type="button" onclick="alert('Insert Background-Image URL Example:https://images.unsplash.com/photo-1602321526500-e7b6ac3b3b23?q=80&w=1931&auto=format')" title="Help">
+            <button type="button" onclick="unsplashHelp()" title="Help">
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -206,16 +189,13 @@
         window.localStorage.setItem("OpenWeatherApi", "b190a0605344cc4f3af08d0dd473dd25");
     }
     function newsDB() {
-        window.localStorage.setItem("NewsApi", "2c925d05bbe34d23a7fb4f425749d9b9");
+        window.localStorage.setItem("NewsApi", "dffc1c2d7e1b50ff1ffd3a919d7d483b");
     }
     function cityDB() {
         window.localStorage.setItem("City", "Singapore");
     }
-    function countDB() {
-        window.localStorage.setItem("Country", "SG");
-    }
     function backDB() {
-        window.localStorage.setItem("BackG", "https://images.unsplash.com/photo-1602321526500-e7b6ac3b3b23?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        window.localStorage.setItem("BackG", "X2qWCLQ3QwM1mIy6IwUbuMSV-dmeJM-aOYWTmNzPOqw");
     }
 
     var weather = window.localStorage.getItem('OpenWeatherApi');
@@ -233,11 +213,6 @@
         cityDB()
     document.getElementById('citybar').value = cty;
 
-    var count = window.localStorage.getItem('Country');
-    if (count == null)
-        countDB()
-    document.getElementById('countrybar').value = count;
-
     var count = window.localStorage.getItem('BackG');
     if (count == null)
         backDB()
@@ -250,8 +225,6 @@
         window.localStorage.setItem("NewsApi", news);
         city = document.getElementById('citybar').value
         window.localStorage.setItem("City", city);
-        count = document.getElementById('countrybar').value
-        window.localStorage.setItem("Country", count);
         count = document.getElementById('bgbar').value
         window.localStorage.setItem("BackG", count);
     }
@@ -261,7 +234,10 @@
         myWindow = window.open("https://openweathermap.org/", "_blank")
     }
     function NewsApiHelp() {
-        myWindow = window.open("https://newsapi.org/", "_blank")
+        myWindow = window.open("https://gnews.io/", "_blank")
+    }
+    function unsplashHelp() {
+        myWindow = window.open("https://unsplash.com/developers", "_blank")
     }
 </script>
 

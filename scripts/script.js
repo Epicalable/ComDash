@@ -1,5 +1,23 @@
-let bgim = window.localStorage.getItem("BackG");
-document.body.style.backgroundImage = `url('`+bgim+`')`;
+
+function getImage() {
+    let cityw = window.localStorage.getItem('City');
+    let bgim = window.localStorage.getItem("BackG");
+    fetch("https://api.unsplash.com/photos/random?client_id=" + bgim + "&query=" + cityw + "&count=1&orientation=landscape")
+        .then((response) => {
+            if (!response.ok) {
+                alert("No Image found.");
+                throw new Error("No Image found.");
+            }
+            return response.json();
+        })
+        .then((data) => displayImage(data));
+
+    function displayImage(data) {
+        const { regular } = data[0].urls;
+        document.body.style.backgroundImage = `url("${regular}")`;
+    }
+}
+window.onload = getImage();
 
 /*Start of WeatherCard JS Code*/
 let weather = {
@@ -52,50 +70,6 @@ function OpenWeatherHelp() {
 /*End of WeatherCard JS Code*/
 
 
-window.onload = getNewsnow();
-
-/*Start of NewsCard JS Code*/
-function getNewsnow() {
-    // initialze of the variables 
-    let apiKey = window.localStorage.getItem('NewsApi');
-    // grab the news container
-    let newsAccordion = document.getElementById('newsAccordion');
-    // create the get request
-    const xhr = new XMLHttpRequest();
-    let term = window.localStorage.getItem("Country");
-    if (term == "") {
-        alert("Please Enter Country Abbrevation (EX.SG,US,AU) Before Requesting For News Headlines!");
-    } else {
-        // use for the post request 
-        xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${term}&apiKey=${apiKey}&pageSize=100`, true)
-        // when response is ready
-        xhr.onload = function () {
-            let json = JSON.parse(this.responseText);
-            let articles = json.articles;
-            console.log(articles);
-            let newsHtml = "";
-            articles.forEach(function (element, index) {
-                let news = `<div class="newscard">
-                                    <div class="card-header" id="heading${index}">
-                                        <h2 class="mb-0" color="white">${element["title"]}</h2>
-                                    </div>
-                                    <div id="collapse${index}" class="collapse" aria-labelledby="heading${index}" data-parent="#newsAccordion">
-                                        <div class="card-body"><a href="${element['url']}" target="_blank"> Read more here </a> </div>
-                                    </div>
-                            </div>`;
-                newsHtml += news;
-            });
-            newsAccordion.innerHTML = newsHtml;
-        }
-        xhr.send()
-    }
-}
-function NewsApiHelp() {
-    myWindow = window.open("https://newsapi.org/docs/endpoints/top-headlines", "_blank")
-}
-/*End of NewsCard JS Code*/
-
-
 /*Start of NewsCard JS Code*/
 function getNews() {
     // initialze of the variables 
@@ -104,12 +78,11 @@ function getNews() {
     let newsAccordion = document.getElementById('newsAccordion');
     // create the get request
     const xhr = new XMLHttpRequest();
-    let term = document.getElementById('news-search-bar').value;
-    if (term == "") {
-        alert("Please Enter Country Abbrevation (EX.SG,US,AU) Before Requesting For News Headlines!");
-    } else { 
-       // use for the post request 
-        xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=${term}&apiKey=${apiKey}&pageSize=100`, true)
+    let term = document.getElementById('country-search-bar').value;
+    let source1 = document.getElementById('news-search-bar').value;
+    { 
+    // use for the post request
+    xhr.open('GET', `https://gnews.io/api/v4/top-headlines?category=${source1}&lang=en&country=${term}&max=100&apikey=${apiKey}`, true)
     // when response is ready
     xhr.onload = function () {
         let json = JSON.parse(this.responseText);
@@ -131,9 +104,6 @@ function getNews() {
     }
     xhr.send() 
     } 
-}
-function NewsApiHelp() {
-    myWindow = window.open("https://newsapi.org/docs/endpoints/top-headlines", "_blank")
 }
 /*End of NewsCard JS Code*/
 
