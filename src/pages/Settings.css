@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.settings-container {
+    display: flex;
+}
+
+.settings-box {
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 4em;
+    border-radius: 50px;
+    max-width: 420px;
+    width: 100%;
+    max-height: 510px;
+}
+
+.sidebar {
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+  }
+  .sidebar div {
+    padding: 5px;
+    font-size: 24px;
+    display: block;
+  }
+  .baricons {
+    left: 4px;
+    position: relative;
+    top: -40px;
+  }
+  
+  img.comicon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 4px;
+}
+  div#Dashbutton,
+  div#Setbutton {
+    left: -2px;
+    position: relative;
+  }
+  .baraboutus {
+    bottom: 40px;
+    position: absolute;
+  }
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    width: 276px;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: white;
+    font-size: 86%;
+    margin-right: 10px;
+}
+
+.input-group button {
+    border-radius: 50%;
+    border: none;
+    height: 35px;
+    width: 43px;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-group button:hover {
+    background: rgba(255, 255, 255, 0.749);
+}
+
+.save-button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 31px;
+    width: 50px;
+    background: #545454;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+}
+.save-button:hover {
+    background: rgba(255, 255, 255, 0.749);
+}

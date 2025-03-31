@@ -1,19 +1,21 @@
-# ComDash <img width ="30" height="30" src="https://user-images.githubusercontent.com/69076784/236990283-83859a95-c9fa-4d2a-8729-4afb3900789d.png">
+# ComDash <img width ="30" height="30" src="https://user-images.githubusercontent.com/69076784/236990283-83859a95-c9fa-4d2a-8729-4afb3900789d.png"> + <img width ="30" height="30" src="./src/pages/assets/react.svg">
 
 ###### An All In One Web based Dashboard For News, Weathers and More...
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Epicalable/ComDash) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Epicalable/ComDash) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Epicalable/ComDash/issues)
 
-**This Program Is CPU-Intensive Please Make Sure That You're Using A Mid To High Range PC.**  
+**This Program Is CPU-Intensive Please Make Sure That You're Using A Mid To High Range PC.**
+
+ATTENTION : This codebase has been updated in-line with Project-WrapSpeed (Upgrading of Infrasturcture and Services) for users wishing to go back to the Vanilla Js version head to: [Commit 0b9d90](https://github.com/Epicalable/ComDash/tree/0b9d90cb93b83920100099202fe27f8b99fd7efa)
  
-<img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/e61ae01e-2055-45dc-a64a-b4c0098f014b"><img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/0da0ea8a-4884-4b69-9fd4-1e668bed189b"><img width="250" src="https://github.com/Epicalable/ComDash/assets/69076784/6089c530-e6e3-4883-8eb2-1092de784677">
+<img width="250" src="https://github.com/user-attachments/assets/eff94a5b-bdc2-4137-835d-3d8b91e85aaf"> <img width="250" src="https://github.com/user-attachments/assets/34af6844-9e7a-4c4d-b1ec-46ad201e10ab">
 
 
 ## Table Of Contents
 - [What's New?](#whats-new)
 - [Running ComDash On Your Computer](#running-comdash-on-your-local-computer)
-- [Introduction to ComDash](#introduction-to-comdash)
-- [Running ComDash](#running-comdash)
+- [Introduction to ComDash](#introducing-comdash)
+- [Running ComDash](#running-comdash-on-your-local-computer)
 - [What APIs Should I Subscribe To?](#what-apis-should-i-subscribe-to)
   * [Where Do I Paste The APIs?](#where-do-i-paste-the-apis)
 - [Other Functions Available](#other-functions-available)
@@ -24,18 +26,17 @@
 ## What's New?
 Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-speed with the growing tech solutions and algorithms. Hence this new commit includes:
 
-<img width="250" src="https://github.com/user-attachments/assets/6dea592c-11fb-4700-a39d-f5de3de0467d">  
 
 Check Out Our Update Here: https://www.youtube.com/watch?v=tuF0uX9iNqA
 
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-1. Due to the closure of source.unsplash.com, our team has finally found a way on integrating Unsplash's API. 
-   Users would henceforth need to register for an Api key to get images from Unsplash.
-2. Country input bar has been removed from the Settings page.
-3. News-card has a new look and feel: 
-   3a. New drop-down box has been added to select the country and another for News topics.
+1. HUGE UPDATE: Our entire codebase has been re-written with React Js
+   in-line with Project-WrapSpeed.
+    1a. More features and React native features will soon be added.
+2. React Js will be supported till the forseeable future.
+3. Users who prefer the Vanilla Js version can head to commit 0b9d90
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -46,50 +47,36 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 1-November-2024 20:15HRS (Singapore Standard Time)
+Last Updated: 30-March-2025 18:10 HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
 
 
 ## Running ComDash On Your Local Computer
-ComDash can be executed as a Web-App by running the html file on a localhost on your computer without hosting it on a web-server online by following these steps:
-
-1. Click on "Start" and go to or search for "Control Panel" and search for "Programs and Features".
-
-2. Open "Programs and Features" and on the left pane click on "Turn Windows Features on or off".
-
-*  Note: You can also search for "Turn Windows Features on or off" on your computer's search-bar for easier access.
-
-3. Scroll down to find "Internet Information Server" and click on the box to enable it to use Localhost functionality on your computer.
-
-4. Place the Comdash folder you've downloaded inside "C:/inetpub/wwwroot" folder located on the C: drive.
-
-5. Now head to your browser and type this in the address bar: "http://127.0.0.1/ComDash/ComDash.html" and the web-application should be up and running properly.
-
-For further reading/referencing: https://gist.github.com/jgravois/5e73b56fa7756fd00b89
+ComDash can be exectued on you local host by installing node.js and after initializing npm,
+Head to pages sub-folder 
+```
+>>> cd ComDash
+>>> cd src
+>>> cd pages
+```
+Then run the following commands in you command line to start your localhost.
+```
+>>> npm run dev
+```
 
 ## Introducing ComDash
-Last year our startup announced Comdash: an all-in-one web-based Dashboard to get essential day-to-day information for users built using Html5 for frontend structure, CSS3 for webpage styling and JavaScript for background infomation retreival processes.  
-So what does ComDash do? Well ComDash can retrieve news, weather, tasks and some more cool features coming soon.
-
-
-## Running ComDash
-To run ComDash all you'll need to do is to open the ComDash.html file in your browser.  
-Make sure that you are connected to the internet for most of our fuctions to work.  
-<img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/9f0814b1-0703-4dfe-bac1-2b683555e231">  
-If you are not connected to the internet you will be shown with this message.  
-<img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/33e0d1fe-3566-4b7e-966f-510631d9656c">  
+Last year our startup announced Comdash: an all-in-one web-based Dashboard to get essential day-to-day information for users built using React JS.  
+ComDash can retrieve news, weather, tasks and some more cool features coming soon.
 
 
 ## What APIs Should I Subscribe To?
 Upon opening, by default you can reteive news and weather using pre-existing APIs but if you want it to be personalised then it is best to activate an API. To do that you will need to head to:
 
-1. https://newsapi.org/ : For ComDash To Get Current News Headlines For You And Display In NewsCard.  
-    <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/b20390a3-5a31-4492-87b7-b0f3e1fbbe36"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/58815274-3355-4dc4-ba62-b6425c953408"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/cb408cb7-a146-4183-8eea-9edbddc593af">
+1. https://gnews.io/ : For ComDash To Get Current News Headlines For You And Display In NewsCard.  
 
-2. https://openweathermap.org/ : For ComDash To Get current Weather information For You And Display In WeatherCard.  
-   <img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/323996c8-f861-41b6-bae6-acaa7640039c"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/4179a4a7-d788-41a7-98fe-228f68709458"><img width="100" src="https://github.com/Epicalable/ComDash/assets/69076784/92b31037-6279-4df3-b5fb-3fbb474b98f8">
+2. https://openweathermap.org/ : For ComDash To Get current Weather information For You And Display In WeatherCard.
 
 
    #### Where Do I Paste The APIs?
@@ -128,3 +115,5 @@ Thank you for your kind co-operation :-)
 
 ComDash Copyright (C) Epicalable 2024  
 All Rights Reserved
+
+Version 3.0.0
