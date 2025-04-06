@@ -25,25 +25,6 @@
   
   }
   
-  .comdash {
-    font-size: 35px;
-    height: 110px;
-    color: rgb(85, 137, 170);
-    text-align: center;
-  }
-  
-  .searchbar {
-    border: none;
-    outline: none;
-    padding: 0.4em 1em;
-    border-radius: 24px;
-    background: rgb(0 0 0 / 0.41);
-    color: white;
-    font-size: 100%;
-    width: 273px;
-    text-align: center;
-  }
-  
   select#country-search-bar {
     border: none;
     outline: none;
@@ -108,12 +89,29 @@
   button:hover#news-search{
     background: rgba(255, 255, 255, 0.749);
   }
+
+  .tododiv {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    border-bottom-left-radius: 3em;
+    color: rgb(217, 217, 217);
+    padding: 2em;
+    text-align: center;
+    height: 879px;
+  }
   
   .todolist {
     overflow: auto;
     display: list-item;
-    height: 585px;
-    width: 602px;
+    width: 655px;
+    overflow-y: auto;
+    height: -webkit-fill-available;
+    left: inherit;
+    position: absolute;
   }
   
   .newsAccordion {
@@ -124,12 +122,12 @@
   
   
   .weatherdiv {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 3em;
-    height: 265px;
+    height: 617px;
     color: rgb(255, 255, 255);
     padding: 3em;
   }
@@ -150,7 +148,7 @@
   }
   
   .newsdiv {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -159,7 +157,7 @@
     border-bottom-left-radius: 3em;
     color: rgb(255, 255, 255);
     text-align: center;
-    min-height: 965px;
+    min-height: 1116px;
     padding: 2em;
   }
 
@@ -171,19 +169,31 @@
   }
   
   .googlediv {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 3em;
-    color: black;
+    color: rgb(255, 255, 255);
     height: 150px;
     text-align: center;
     padding: 2em;
   }
+
+  .searchbar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: rgb(0 0 0 / 0.41);
+    color: white;
+    font-size: 100%;
+    width: 273px;
+    text-align: center;
+  }
   
   .calenderdiv{
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -198,17 +208,6 @@
     height: 330px;
   }
 
-  .tododiv {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 3em;
-    color: rgb(217, 217, 217);
-    padding: 2em;
-    text-align: center;
-    height: 684px;
-  }
   
   .sidebar {
     background: rgba(0, 0, 0, 0.30);
@@ -248,4 +247,38 @@
     bottom: 25px;
     position: absolute;
     left: 8px;
+  }
+  .weatherforecast {
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 576px;
+    height: 306px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .forecast{
+    border-Radius: 10px;
+    padding: 15px;
+    width: 250px;
+    height: 320px;
+    margin-Bottom: 15px;
+  }
+  
+  h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0.55em;
+    margin-block-end: 0.50em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+  }
+  ul {
+    color: white;
+    font-size: 1.17em;
+    font-weight: bold;
 }

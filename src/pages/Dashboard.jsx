@@ -9,6 +9,8 @@ const DashBoard = () => {
   const [date, setDate] = useState(new Date());
   const [todos, setTodos] = useState([]);
   const [task, setTask] = useState('');
+  const [forecastData, setForecastData] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     // Fetch weather data when the app loads
@@ -24,41 +26,27 @@ const DashBoard = () => {
     // Fetch background image when the app loads
     getImage();
 
-    getstock();
   }, []);
 
-  function getstock(){
-    fetch('https://www.lphavantage.co/query?function=GLOBAL_QUOTE&symbol=AAPL&apikey=BLBNM3VWGDYRC7CR')
-            .then(response => response.json())
-            .then(data => {
-                const stockPrice = data['Global Quote']['05. price'];
-                const ticker = data['Global Quote']['09. change'];
-                document.getElementById('stockPrice0').textContent = 'AAPL: ' + stockPrice;
-                if (ticker<0){
-                  document.getElementById('chang0').textContent = "Down"
-                } else {
-                  document.getElementById('chang0').textContent = "up"
-                }
-            });
-        fetch('https://www.lphavantage.co/query?function=GLOBAL_QUOTE&symbol=MSFT&apikey=YOUR_API_KEY')
-                .then(response => response.json())
-                .then(data => {
-                    const stockPrice = data['Global Quote']['05. price'];
-                    document.getElementById('stockPrice1').textContent = 'MSFT: ' + stockPrice;
-                });
-        fetch('https://www.lphavantage.co/query?function=GLOBAL_QUOTE&symbol=GOOGL&apikey=YOUR_API_KEY')
-                .then(response => response.json())
-                .then(data => {
-                    const stockPrice = data['Global Quote']['05. price'];
-                    document.getElementById('stockPrice2').textContent = 'GOOGL: ' + stockPrice;
-                });
-        fetch('https://www.aphavantage.co/query?function=GLOBAL_QUOTE&symbol=NVDA&apikey=YOUR_API_KEY')
-                .then(response => response.json())
-                .then(data => {
-                    const stockPrice = data['Global Quote']['05. price'];
-                    document.getElementById('stockPrice3').textContent = 'NVDA: ' + stockPrice;
-                });
-  }
+  useEffect(() => {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/forecast?q=singapore&units=metric&appid=b190a0605344cc4f3af08d0dd473dd25"
+    )
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("API request failed");
+        }
+      })
+      .then((data) => {
+        setForecastData(data.list);
+      })
+      .catch((error) => {
+        console.error(error);
+        setError(error.message);
+      });
+  }, []);
 
   function getNews() {
     // grab the news container
@@ -173,17 +161,15 @@ const DashBoard = () => {
 
       <div className="container">
         <div>
-            <div className="comdash">
-              <h1>COMDASH</h1>
-            </div>
 
             {/* Weather Section */}
             <div className="weatherdiv">
-                  <h3>{weatherData ? `Weather in ${weatherData.name}` : "Loading..."}</h3>
+              <div className="todayweather">
+                <h3>{weatherData ? `Weather in ${weatherData.name} :` : "Loading..."}</h3>
                   {weatherData && (
                       <>
-                      Temperature: {weatherData.main.temp}°C
-                      <p>
+                      <h4>Temperature: {weatherData.main.temp}°C</h4>
+                      <h4>
                       <img id="weathericon" src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}/>
                       <br />
                       Description: {weatherData.weather[0].description}
@@ -195,11 +181,26 @@ const DashBoard = () => {
                       Humidity: {weatherData.main.humidity}%
                       <br />
                       Wind Speed: {weatherData.wind.speed} m/s
-                      </p>
+                      </h4>
                       </>
-                  )}
+                )}
+              </div>
+              <h3>{weatherData ? `Weather Forecast for ${weatherData.name} :` : "Loading..."}</h3>
+              <div className="weatherforecast">
+                {error && <p style={{ color: "red" }}>{error}</p>}
+                {forecastData.map((item, index) => (
+                  <div className="forecast" key={index}>
+                    <p><strong>Date & Time:</strong> {item.dt_txt}</p>
+                    <img src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="Weather Icon" />
+                    <h5><strong>Temperature:</strong> {item.main.temp}°C</h5>
+                    <h5><strong>Feels like:</strong> {item.main.feels_like}°C</h5>
+                    <h5><strong>Humidity:</strong> {item.main.humidity}%</h5>
+                    <h5><strong>Wind Speed:</strong> {item.wind.speed} km/h</h5>
+                  </div>
+                ))}
+              </div>
             </div> 
-            <br /><br /><br />
+            <br />
                 
             {/* Stock Section will be worked on later */}
             {/*<div className="stockdiv">
@@ -240,7 +241,7 @@ const DashBoard = () => {
                           </svg>
             </button>
           </div>
-          <br /><br /><br />
+          <br />
 
           {/* Todo Section */}
           <div className="tododiv">

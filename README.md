@@ -8,7 +8,7 @@
 
 ATTENTION : This codebase has been updated in-line with Project-WrapSpeed (Upgrading of Infrasturcture and Services) for users wishing to go back to the Vanilla Js version head to: [Commit 0b9d90](https://github.com/Epicalable/ComDash/tree/0b9d90cb93b83920100099202fe27f8b99fd7efa)
  
-<img width="250" src="https://github.com/user-attachments/assets/eff94a5b-bdc2-4137-835d-3d8b91e85aaf"> <img width="250" src="https://github.com/user-attachments/assets/34af6844-9e7a-4c4d-b1ec-46ad201e10ab">
+<img width="250" src="https://github.com/user-attachments/assets/22ea3d98-dfb5-431f-b11e-fc6910943f8b"> <img width="250" src="https://github.com/user-attachments/assets/34af6844-9e7a-4c4d-b1ec-46ad201e10ab">
 
 
 ## Table Of Contents
@@ -32,22 +32,19 @@ Check Out Our Update Here: https://www.youtube.com/watch?v=tuF0uX9iNqA
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-1. HUGE UPDATE: Our entire codebase has been re-written with React Js
-   in-line with Project-WrapSpeed.
-    1a. More features and React native features will soon be added.
-2. React Js will be supported till the forseeable future.
-3. Users who prefer the Vanilla Js version can head to commit 0b9d90
+1. HUGE UPDATE: Our entire codebase has been re-written with React Js in-line with Project-WrapSpeed 
+   and React Js will be supported till the forseeable future.
+2. Weather Forecast for your location have been added in the weather card.
+3. Cards visibility have been adjusted for better viewing
 
 Code Checks Manifest:-
 All Checks Status: ✅
 -----------------------------------------
-BackEnd Code Integrity Checks: ✅
-FrontEnd UI Stability Checks: ✅
 UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 30-March-2025 18:10 HRS (Singapore Standard Time)
+Last Updated: 6-April-2025 17:20 HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.

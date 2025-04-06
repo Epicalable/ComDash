@@ -22,14 +22,6 @@
   
   }
   
-  
-  .comdash {
-    font-size: 35px;
-    height: 70px;
-    color: rgb(85, 137, 170);
-    text-align: center;
-  }
-  
   .searchbar {
     border: none;
     outline: none;
@@ -107,11 +99,28 @@
     background: rgba(255, 255, 255, 0.749);
   }
   
+  .tododiv {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    border-bottom-left-radius: 3em;
+    color: rgb(217, 217, 217);
+    padding: 2em;
+    text-align: center;
+    height: 833px;
+  }
+  
   .todolist {
     overflow: auto;
     display: list-item;
-    height: 585px;
-    width: 602px;
+    width: 655px;
+    overflow-y: auto;
+    height: -webkit-fill-available;
+    left: inherit;
+    position: absolute;
   }
   
   .newsAccordion {
@@ -127,7 +136,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 3em;
-    height: 265px;
+    height: 460px;
     color: rgb(255, 255, 255);
     padding: 3em;
   }
@@ -153,7 +162,7 @@
     border-bottom-left-radius: 3em;
     color: rgb(255, 255, 255);
     text-align: center;
-    min-height: 942px;
+    min-height: 1116px;
     padding: 2em;
   }
   
@@ -192,15 +201,78 @@
     height: 330px;
   }
   
-  .tododiv {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 3em;
-    color: black;
-    padding: 2em;
-    text-align: center;
-    height: 664px;
+  
+  .sidebar {
+    background: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+  }
+  .sidebar div {
+    padding: 6px;
+    font-size: 24px;
+    display: block;
+  }
+  .baricons {
+    left: 1px;
+    position: relative;
+    top: -40px;
   }
   
+  img#Comicon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 3px;
+  }
+  div#Dashbutton,
+  div#Setbutton {
+    left: -2px;
+    position: relative;
+  }
+  .baraboutus {
+    bottom: 25px;
+    position: absolute;
+    left: 8px;
+  }
+  .weatherforecast {
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 576px;
+    height: 306px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .forecast{
+    border-Radius: 10px;
+    padding: 15px;
+    width: 250px;
+    height: 320px;
+    margin-Bottom: 15px;
+  }
+  
+  h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0.55em;
+    margin-block-end: 0.50em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+  }
+  ul {
+    color: white;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
