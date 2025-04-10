@@ -201,16 +201,6 @@ const DashBoard = () => {
               </div>
             </div> 
             <br />
-                
-            {/* Stock Section will be worked on later */}
-            {/*<div className="stockdiv">
-              <h3>Stocks</h3>
-              <label id="stockPrice0"></label><br />
-              <label id="stockPrice1"></label><br />
-              <label id="stockPrice2"></label><br />
-              <label id="stockPrice3"></label>
-            </div>
-            <br />*/}
 
             {/* Calander Section */}
             <div className="calenderdiv">

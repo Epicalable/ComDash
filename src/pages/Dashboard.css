@@ -282,3 +282,41 @@
     font-size: 1.17em;
     font-weight: bold;
 }
+button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__prev-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__label {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__next-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__next2-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__tile.react-calendar__month-view__days__day {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.react-calendar__month-view__weekdays {
+  color: white;
+}

@@ -34,8 +34,7 @@ ComDash Updates In This Commit:-
 Update Highlights:-
 1. HUGE UPDATE: Our entire codebase has been re-written with React Js in-line with Project-WrapSpeed 
    and React Js will be supported till the forseeable future.
-2. Weather Forecast for your location have been added in the weather card.
-3. Cards visibility have been adjusted for better viewing
+2. Calander card has been modified to fit the asthetics.
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -44,7 +43,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 6-April-2025 17:20 HRS (Singapore Standard Time)
+Last Updated: 10-April-2025 19:25 HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -113,4 +112,4 @@ Thank you for your kind co-operation :-)
 ComDash Copyright (C) Epicalable 2024  
 All Rights Reserved
 
-Version 3.0.0
+Version 3.0.3
