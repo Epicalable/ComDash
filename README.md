@@ -47,11 +47,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-<<<<<<< HEAD
-Last Updated: 14-April-2025 13:45 HRS (Singapore Standard Time)
-=======
-Last Updated: 14-April-2025 13:40 HRS (Singapore Standard Time)
->>>>>>> 75edb3219c3544f351acc7d56ceca113e58c0411
+Last Updated: 14-April-2025 13:48 HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -91,17 +87,10 @@ Upon opening, by default you can track your To-Do tasks so it is best to activat
 To do that users will need to head to and register for the following API services :
 
 1. https://openweathermap.org/ : For ComDash to get current weather information and weather forecast for your city and display in WeatherCard.  
-<<<<<<< HEAD
    <img width="150" src="https://github.com/user-attachments/assets/b7e8a0a2-5910-40d4-aff0-c0300dc175ab">
 
 2. https://gnews.io/ : For ComDash to get current news headlines for your country (chosen in the drop-down list) and display it for you in the NewsCard.   
    <img width="150" src="https://github.com/user-attachments/assets/31b9fd0c-1740-48ad-b58c-178075d3e726"><img width="150" src="https://github.com/user-attachments/assets/a88a69fb-defb-493a-9ba5-a2442068a9f3"> 
-=======
-<img width="150" src="https://github.com/user-attachments/assets/b7e8a0a2-5910-40d4-aff0-c0300dc175ab">
-
-2. https://gnews.io/ : For ComDash to get current news headlines for your country (chosen in the drop-down list) and display it for you in the NewsCard.   
-<img width="150" src="https://github.com/user-attachments/assets/31b9fd0c-1740-48ad-b58c-178075d3e726"><img width="150" src="https://github.com/user-attachments/assets/a88a69fb-defb-493a-9ba5-a2442068a9f3"> 
->>>>>>> 75edb3219c3544f351acc7d56ceca113e58c0411
 
 3. https://unsplash.com/developers : For ComDash to get a random background image which is based on your city.
 
@@ -177,4 +166,4 @@ Thank you for your kind co-operation :-)
 ComDash Copyright (C) Epicalable 2024  
 All Rights Reserved
 
-Version 3.1.5
+Version 3.1.6
