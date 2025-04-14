@@ -2,12 +2,10 @@
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
     padding: 4rem;
-  
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-repeat: no-repeat;
     background-size: cover;
-  
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -115,7 +113,7 @@
   
   .todolist {
     overflow: auto;
-    display: list-item;
+    display: contents;
     width: 655px;
     overflow-y: auto;
     height: -webkit-fill-available;

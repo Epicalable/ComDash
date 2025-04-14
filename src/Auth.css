@@ -1,0 +1,29 @@
+
+div#auth-container {
+    font-size: 2em;
+    text-align: center;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3em;
+    padding: 3em;
+}
+
+.sbg {
+    border: none;
+    outline: none;
+    padding: 0.6em 3em;
+    border-radius: 24px;
+    background: rgb(0 0 0 / 0.41);
+    color: white;
+    font-size: 55%;
+    width: 240px;
+    text-align: center;
+}
+
+label#sno {
+    font-size: 30px;
+    font-weight: 400;
+}

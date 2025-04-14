@@ -2,15 +2,20 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Calendar from 'react-calendar';
 import { fetchWeather } from "./weather"; // Import the function for weather
-import "./DashBoard.css"; // Import the CSS file for styling
+import { db, auth } from '../firebase';
+import { collection,addDoc,getDocs,deleteDoc,doc} from 'firebase/firestore';
+import { signOut, getAuth, onAuthStateChanged } from 'firebase/auth';
+import "./DashBoard.css";
+const user = auth.currentUser;
 
 const DashBoard = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [date, setDate] = useState(new Date());
-  const [todos, setTodos] = useState([]);
-  const [task, setTask] = useState('');
   const [forecastData, setForecastData] = useState([]);
   const [error, setError] = useState(null);
+  const [user, setUser] = useState(null);
+  const [todos, setTodos] = useState([]);
+  const [task, setTask] = useState('');
 
   useEffect(() => {
     // Fetch weather data when the app loads
@@ -22,16 +27,13 @@ const DashBoard = () => {
       }
     }
     getWeather();
-
-    // Fetch background image when the app loads
     getImage();
 
   }, []);
 
   useEffect(() => {
-    fetch(
-      "https://api.openweathermap.org/data/2.5/forecast?q=singapore&units=metric&appid=b190a0605344cc4f3af08d0dd473dd25"
-    )
+    let apiKeywe = window.localStorage.getItem('OpenWeatherApi');
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=singapore&units=metric&appid=${apiKeywe}`)
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -111,29 +113,49 @@ const DashBoard = () => {
       .catch((error) => document.body.style.backgroundImage = `url("https://images.unsplash.com/photo-1630387775844-b15d0f769972?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`);
   }
 
-  useEffect(() => {
-    const storedTodos = JSON.parse(localStorage.getItem('todos'));
-    if (storedTodos) {
-      setTodos(storedTodos);
-    }
-  }, []);
 
-  // Update local storage whenever TODOs change
-  useEffect(() => {
-    localStorage.setItem('todos', JSON.stringify(todos));
-  }, [todos]);
-
-  const handleAddTodo = () => {
-    if (task.trim() !== '') {
-      setTodos([...todos, task]);
+    // ----- TODOS -----
+    useEffect(() => {
+      const auth = getAuth();
+      const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+        if (currentUser) { setUser(currentUser); }
+      });
+      return () => unsubscribe();
+    }, []);
+  
+    useEffect(() => {
+      if (user) { fetchTodos();}
+    }, [user]);
+  
+    const fetchTodos = async () => {
+      const todoRef = collection(db, `users/${user.uid}/todos`);
+      const snapshot = await getDocs(todoRef);
+      const tasks = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+      setTodos(tasks);
+    };
+  
+    const addTodo = async () => {
+      if (!task.trim()) return;
+      const todoRef = collection(db, `users/${user.uid}/todos`);
+      await addDoc(todoRef, { task });
       setTask('');
-    }
-  };
+      fetchTodos();
+    };
+  
+    const deleteTodo = async (id) => {
+      await deleteDoc(doc(db, `users/${user.uid}/todos/${id}`));
+      fetchTodos();
+    };
+  
+    const handleLogout = async () => {
+      const auth = getAuth();
+      await auth.signOut();
+      window.location.reload();
+    };
+  
+    if (!user) return <div>Loading...</div>; // optional: show loading screen
+  
 
-  const handleRemoveTodo = (index) => {
-    const newTodos = todos.filter((_, i) => i !== index);
-    setTodos(newTodos);
-  };
   
 
   return (
@@ -149,6 +171,10 @@ const DashBoard = () => {
                         <img src="https://github.com/user-attachments/assets/b5cfb272-5083-4d39-9265-67f6bf5335f4"/>
                     </div>
                 </Link>
+                <div id="Dashbutton">
+                  <img src="https://github.com/user-attachments/assets/ddc1481e-22e7-45ab-b1cf-aa85a8a94992" id="Comicon" onClick={handleLogout}/>
+                </div>
+                
                 
             </div>
             <div class="baraboutus">
@@ -244,7 +270,7 @@ const DashBoard = () => {
                   value={task}
                   onChange={(e) => setTask(e.target.value)}
                 />
-                <button onClick={handleAddTodo} id="add-todo-button">
+                <button onClick={addTodo} id="add-todo-button">
                 <svg stroke="currentColor"
                           fill="currentColor" stroke-width="0" t="1551322312294" viewBox="0 0 1024 1024" version="1.1" pId="10297"
                           height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -256,10 +282,10 @@ const DashBoard = () => {
               </div>
               <div className="todolist">
                 <ul>
-                {todos.map((todo, index) => (
-                  <li key={index}>
-                    {todo}&nbsp;&nbsp;
-                    <button id="add-todo-button" onClick={() => handleRemoveTodo(index)}>✔</button>
+                {todos.map((todo) => (
+                  <li key={todo.id}>
+                    {todo.task}&nbsp;&nbsp;
+                    <button id="add-todo-button" onClick={() => deleteTodo(todo.id)}>✔</button>
                   </li>
                 ))}
               </ul>

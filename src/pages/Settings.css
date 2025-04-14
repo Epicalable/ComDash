@@ -22,7 +22,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 4em;
     border-radius: 50px;
-    max-width: 420px;
     width: 100%;
     max-height: 510px;
 }
