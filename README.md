@@ -1,4 +1,5 @@
-# ComDash <img width ="30" height="30" src="https://user-images.githubusercontent.com/69076784/236990283-83859a95-c9fa-4d2a-8729-4afb3900789d.png"> + <img width ="30" height="30" src="./src/pages/assets/react.svg"> + <img width="30" height="30" src="https://github.com/user-attachments/assets/06395346-45bf-4101-b176-245ab2825ca7">
+# ComDash  
+# <img width ="30" height="30" src="https://user-images.githubusercontent.com/69076784/236990283-83859a95-c9fa-4d2a-8729-4afb3900789d.png"> + <img width ="30" height="30" src="./src/pages/assets/react.svg"> + <img width="30" height="30" src="https://github.com/user-attachments/assets/06395346-45bf-4101-b176-245ab2825ca7"> + <img width="30" height="30" src=https://github.com/user-attachments/assets/8616be1a-d803-4ea7-808a-b19736af9de1>
 
 ###### An All In One Web based Dashboard For News, Weathers and More...
 
@@ -8,7 +9,7 @@
 
 ATTENTION : This codebase has been updated in-line with Project-WrapSpeed (Upgrading of Infrasturcture and Services) for users wishing to go back to the Vanilla Js version head to: [Commit 0b9d90](https://github.com/Epicalable/ComDash/tree/0b9d90cb93b83920100099202fe27f8b99fd7efa)
  
-<img width="250" src="https://github.com/user-attachments/assets/13d7eaa5-aba1-4c44-ab4a-2ba900bdd6cf"> <img width="250" src="https://github.com/user-attachments/assets/40082e4e-9156-4d3a-9b9e-6d6b5a8776e1">
+<img width="250" src="https://github.com/user-attachments/assets/1cf8f51c-04bb-4969-8a1a-42e6766288bf"> <img width="250" src="https://github.com/user-attachments/assets/d3f74745-3b2a-4238-afcb-fe8bb3991094"> <img width="250" src="https://github.com/user-attachments/assets/60901731-8ed1-49cc-af7b-95c5feefb1e2">
 
 
 ## Table Of Contents
@@ -32,13 +33,12 @@ Here at Epicalable we are committed in keeping ComDash up-to-date and up-to-spee
 ```
 ComDash Updates In This Commit:-
 Update Highlights:-
-1. HUGE UPDATE: Our entire codebase has been re-written with React Js 
+1. HUGE UPDATE: Our entire codebase has been re-written with React Js and TailwindCSS 
    for the frontend and FireBase as the backend database in-line with Project-WrapSpeed 
    and React Js will be supported till the forseeable future.
-2. A new login page and an improved settings page to store and retrieve Api-keys under 
-   user's email in the Firestore database.
-3. To-Do tasks will now be stored in Firestore database under user's email.
-4. Logout button has been added on the sidebar for signing out from your email.
+2. ENTIRE CSS codebase has been modified by implementing TailwindCSS.
+3. The use of localstorage to store info has been depreciated, Going forward all info 
+   requests will be directed and handled with Firebase.
 
 Code Checks Manifest:-
 All Checks Status: ✅
@@ -47,7 +47,7 @@ UX (User Experience) Checks: ✅
 BackEnd Code-FrontEnd UI Integration Checks: ✅
 (All evaluations are done by the R&D Department)
 
-Last Updated: 14-April-2025 13:48 HRS (Singapore Standard Time)
+Last Updated: 20-April-2025 16:50 HRS (Singapore Standard Time)
 Publisher: Epicalable
 ```
 Keep up-to-date with what's happening on this repository by clicking the 'Star' and 'Watch' button on the top right corner of this webpage.
@@ -87,15 +87,15 @@ Upon opening, by default you can track your To-Do tasks so it is best to activat
 To do that users will need to head to and register for the following API services :
 
 1. https://openweathermap.org/ : For ComDash to get current weather information and weather forecast for your city and display in WeatherCard.  
-   <img width="150" src="https://github.com/user-attachments/assets/b7e8a0a2-5910-40d4-aff0-c0300dc175ab">
+   <img width="149" src="https://github.com/user-attachments/assets/bb66c0eb-d41f-442b-bc3c-59b7380638c6"> <img width="150" src="https://github.com/user-attachments/assets/9d827f8d-ae1b-41d4-8859-04867e3392de">
 
 2. https://gnews.io/ : For ComDash to get current news headlines for your country (chosen in the drop-down list) and display it for you in the NewsCard.   
-   <img width="150" src="https://github.com/user-attachments/assets/31b9fd0c-1740-48ad-b58c-178075d3e726"><img width="150" src="https://github.com/user-attachments/assets/a88a69fb-defb-493a-9ba5-a2442068a9f3"> 
+   <img width="150" src="https://github.com/user-attachments/assets/bf297798-f784-4cfc-a90c-13a5267fcc69"> <img width="150" src="https://github.com/user-attachments/assets/a5a57409-bdce-465c-9278-633869cfcabe"> 
 
 3. https://unsplash.com/developers : For ComDash to get a random background image which is based on your city.
 
    #### Where Do I Paste The APIs?
-   <img width="200" src="https://github.com/user-attachments/assets/e2e29645-12d5-4f6d-88ab-f625ce3f7411">
+   <img width="200" src="https://github.com/user-attachments/assets/45bd5732-ae4a-447d-a390-b532d9d144c7">
    
    Users should then copy the API key and paste it in the respective input-bars present in the settings page (accessible through the taskbar on the left side).
 
@@ -103,7 +103,7 @@ To do that users will need to head to and register for the following API service
 ## How Your Data Is Handled With Firebase?
 In ComDash only your Api-keys and your To-Do tasks are saved in the database for easy retrieval. All these information are saved under the E-Mail address which is used for registering in the login page at the start.
 
-<img width="250" src="https://github.com/user-attachments/assets/83edf3a1-a41b-4be3-bd10-73bcef502ef9">
+<img width="250" src="https://github.com/user-attachments/assets/98e87416-f183-4b11-a7c0-af1fc56c5e22">
 
 Once registered User's Apikeys in the settings page and To-Do list in the Taskcard will be stored in Firestore database as shown below.
 
@@ -120,7 +120,6 @@ Once registered User's Apikeys in the settings page and To-Do list in the Taskca
    VITE_STORAGE_BUCKET={your storage bucket}
    VITE_MESSAGING_SENDER_ID={your sender id}
    VITE_APP_ID={your app id}
-
    ```
    Enter the following code snippet in your "Rules" section of the Firestore Database.
    ```
@@ -128,9 +127,9 @@ Once registered User's Apikeys in the settings page and To-Do list in the Taskca
       match /databases/{database}/documents {
          match /users/{userId}/{document=**} {
          allow read, write: if request.auth != null && request.auth.uid == userId;
-    }
-  }
-}
+         }
+      }
+   }
    ```
 
 
@@ -138,11 +137,11 @@ Once registered User's Apikeys in the settings page and To-Do list in the Taskca
 ## Other Functions Available
 Apart from APIs to retreive information ComDash also comes with some more functionalities for users to use:-
 1. Tasks-Tracker:  
-Comdash allows you to track tasks which will be stored on your browser's local storage (Introduced in commit e42da78 ) to prevent erasing the tasks if you exit or reloaad the page.  
+Comdash allows you to track tasks which will be stored in FireBase to prevent erasing the tasks if you exit or reloaad the page.  
    <img width="100" alt="tasks" src="https://github.com/user-attachments/assets/507d6884-4077-435c-a171-5bbdaa511c27">  
    
 2. Calender:  
-Comdash has an in-built calander which allows you see what date it is.  
+Comdash has an in-built calander which allows you to see what day and date it is.  
    <img width="100" alt="calender" src="https://github.com/user-attachments/assets/8be73a88-4506-4e0f-9e1a-d332ce7d3b24">
 
 
@@ -166,4 +165,4 @@ Thank you for your kind co-operation :-)
 ComDash Copyright (C) Epicalable 2024  
 All Rights Reserved
 
-Version 3.1.6
+Version 3.2.7

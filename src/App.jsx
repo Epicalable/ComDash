@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import DashBoard from './pages/Dashboard';
 import Settings from './pages/Settings';
 import Auth from './Auth';
-import './App.css'; // Styling
 
 const App = () => {
   const [user, setUser] = useState(null);

@@ -1,9 +1,8 @@
 // src/Auth.jsx
 import { useState } from 'react';
-import { auth } from './firebase';
+import { auth } from './firebase.jsx';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import "./Auth.css";
-import "./pages/Dashboard.css";
+import './index.css';
 
 export default function Auth({ onUser }) {
   const [email, setEmail] = useState('');
@@ -27,24 +26,25 @@ export default function Auth({ onUser }) {
     <div>
       <div class="sidebar">
             <div class="baricons">
-                <img src="https://github.com/user-attachments/assets/9380b62b-8486-4f1d-a3bf-821bf120147c" id="Comicon"/>
+                <img className="relative h-[50px] w-[50px] left-[10px] -mt-7" src="https://github.com/user-attachments/assets/9380b62b-8486-4f1d-a3bf-821bf120147c" id="Comicon"/>
             </div>
             <div class="baraboutus">
-                <div id="Setbutton">
+                <div id="Setbutton" className="absolute bottom-[2px] left-[8px]">
                     <a href="https://github.com/Epicalable/ComDash" title="About Us"><img src="https://github.com/user-attachments/assets/e9530ede-b4bb-4842-a11a-bfcdeed6d236"/></a>
                 </div>
             </div>
       </div>
-      <div id="auth-container" style={{backgroundColor: 'color here'}}>
-      <h2>{isLogin ? 'Login' : 'Sign Up'}</h2>
+      <div id="auth-container" className="w-[90%] max-w-md mx-auto text-[2em] text-center min-h-[50vh] bg-black/10 backdrop-blur-[10px] shadow-md border border-white/20 rounded-[3em] p-6 sm:p-[3em] flex flex-col items-center justify-center" style={{backgroundColor: 'color here'}}>
+      <label className="text-white text-[30px] font-bold">Welcome To ComDash</label>
+      <h2 className="text-white text-[1.17em] font-bold">{isLogin ? 'Login' : 'Sign Up'}</h2>
       <form onSubmit={handleSubmit}>
-        <label id="sno">E-mail:  </label><br />
-        <input className="sbg" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" /><br />
-        <label id="sno">Password:  </label><br />
-        <input className="sbg" type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" /><br />
-        <button type="submit">{isLogin ? 'Login' : 'Sign Up'}</button>
-      </form>
-      <button onClick={() => setIsLogin(!isLogin)}>
+        <label className="text-white text-[20px] font-normal">E-mail:  </label><br />
+        <input className="border-none outline-none px-[1em] py-[0.6em] rounded-[24px] bg-white/30 text-white text-[55%] w-[260px] text-center" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" /><br />
+        <label className="text-white text-[20px] font-normal">Password:  </label><br />
+        <input className="border-none outline-none px-[1em] py-[0.6em] rounded-[24px] bg-white/30 text-white text-[55%] w-[260px] text-center" type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" /><br /><br />
+        <button className="border-none outline-none px-[1em] py-[0.6em] rounded-[24px] bg-white/40 text-white text-[45%] w-[200px] text-center" type="submit">{isLogin ? 'Login' : 'Sign Up'}</button>
+      </form><br />
+      <button className="border-none outline-none px-[1em] py-[0.6em] rounded-[24px] bg-white/40 text-white text-[45%] w-[200px] text-center" onClick={() => setIsLogin(!isLogin)}>
         Switch to {isLogin ? 'Sign Up' : 'Login'}
       </button>
     </div>

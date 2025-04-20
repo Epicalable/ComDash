@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { db, auth } from '../firebase';
+import { db, auth } from '../firebase.jsx';
 import { doc,setDoc,getDoc} from 'firebase/firestore';
 import { signOut } from 'firebase/auth';
 import "./Settings.css";
+import "../index.css";
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 
@@ -49,10 +50,6 @@ const Settings = () => {
         if (!user) return;
         const apiDocRef = doc(db, `users/${user.uid}/apiKeys/config`);
         await setDoc(apiDocRef, apiConfig);
-        localStorage.setItem("OpenWeatherApi", apiConfig.openWeatherKey);
-        localStorage.setItem("NewsApi", apiConfig.newsApiKey);
-        localStorage.setItem("City", apiConfig.city);
-        localStorage.setItem("BackG", apiConfig.country);
         localStorage.setItem('apiConfig', JSON.stringify(apiConfig));
         alert('API config saved!');
         navigate("/");
@@ -74,57 +71,57 @@ const Settings = () => {
     return (
         <div className="settings-container">
             <div className="sidebar">
-                <div className="baricons">
-                    <img src="https://github.com/user-attachments/assets/9380b62b-8486-4f1d-a3bf-821bf120147c" alt="Comicon" className="comicon" />
+            <div className="relative left-[6px] -top-[40px]">
+                    <img className="relative h-[50px] w-[50px] left-[3px]" src="https://github.com/user-attachments/assets/9380b62b-8486-4f1d-a3bf-821bf120147c" alt="Comicon" />
 
-                    <div className="bar-item">
+                    <div className="relative left-[-2px]">
                         <img src="https://github.com/user-attachments/assets/8d0aba4c-99ce-4b49-b072-c4da4683a141" alt="Dashboard Icon" onClick={goback} />
                     </div>
 
-                    <div className="bar-item">
+                    <div className="relative left-[-2px]">
                         <img src="https://github.com/user-attachments/assets/b5cfb272-5083-4d39-9265-67f6bf5335f4" alt="Settings Icon" />
                     </div>
 
-                    <div id="bar-item">
-                      <img src="https://github.com/user-attachments/assets/ddc1481e-22e7-45ab-b1cf-aa85a8a94992" id="Comicon" onClick={handleLogout}/>
+                    <div className="relative left-[-12px]">
+                      <img src="https://github.com/user-attachments/assets/ddc1481e-22e7-45ab-b1cf-aa85a8a94992" onClick={handleLogout}/>
                     </div>
                 </div>
-                <div className="baraboutus">
+                <div className="absolute bottom-[2px] left-[8px]">
                     <a href="https://github.com/Epicalable/ComDash" title="About Us">
                         <img src="https://github.com/user-attachments/assets/e9530ede-b4bb-4842-a11a-bfcdeed6d236" alt="About Us Icon" />
                     </a>
                 </div>
             </div>
 
-            <div className="settings-box">
-                <label>SETTINGS:</label>
-                <p>Enter your settings below: <br/> (All info is stored on your local storage and on Firebase)</p>
+            <div className="settings-box ml-12 h-auto md:h-[450px] overflow-auto">
+                <label className="text-white text-[1.17em] font-bold">SETTINGS:</label>
+                <p className="text-white text-[1em] font-bold">Enter your settings below: <br/> (All info is stored on your local storage and on Firebase)</p>
 
-                <div className="input-group">
-                    <label>OpenWeather API:</label>
-                    <input name="openWeatherKey" type="text" placeholder="OpenWeather API Key" value={apiConfig.openWeatherKey} onChange={handleApiChange}/>
+                <div className="input-group flex flex-col md:flex-row md:items-center md:gap-2">
+                    <label className="text-white text-[1em] font-bold mb-2 sm:mb-0">OpenWeather API:</label>&nbsp;&nbsp;
+                    <input className="border-none outline-none px-[1em] py-[0.6em] rounded-[24px] bg-white/30 text-white text-[55%] w-full sm:w-[260px] text-center" name="openWeatherKey" type="text" placeholder="OpenWeather API Key" value={apiConfig.openWeatherKey} onChange={handleApiChange}/>
                     <button onClick={() => window.open("https://home.openweathermap.org/subscriptions/unauth_subscribe/onecall_30/base", "_blank")}>?</button>
                 </div>
 
-                <div className="input-group">
-                    <label>GNews API:</label>
-                    <input name="newsApiKey" type="text" placeholder="NewsAPI Key" value={apiConfig.newsApiKey} onChange={handleApiChange} />
+                <div className="input-group flex flex-col md:flex-row md:items-center md:gap-2">
+                    <label className="text-white text-[1em] font-bold">GNews API:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input className="border-none outline-none px-[1em] py-[0.6em] rounded-[24px] bg-white/30 text-white text-[55%] w-[260px] text-center" name="newsApiKey" type="text" placeholder="NewsAPI Key" value={apiConfig.newsApiKey} onChange={handleApiChange} />
                     <button onClick={() => window.open("https://gnews.io/login", "_blank")}>?</button>
                 </div>
 
-                <div className="input-group">
-                    <label>Your City:</label>
-                    <input name="city" placeholder="City (e.g. New York)" value={apiConfig.city} onChange={handleApiChange}/>
+                <div className="input-group flex flex-col md:flex-row md:items-center md:gap-2">
+                    <label className="text-white text-[1em] font-bold">Your City:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input className="border-none outline-none px-[1em] py-[0.6em] rounded-[24px] bg-white/30 text-white text-[55%] w-[260px] text-center" name="city" placeholder="City (e.g. New York)" value={apiConfig.city} onChange={handleApiChange}/>
                     <button onClick={() => alert('Enter current city Ex. Singapore, New York, Sydney, Paris')}>?</button>
                 </div>
 
-                <div className="input-group">
-                    <label>Unsplash API:</label>
-                    <input name="country" placeholder="Country (e.g. US)" value={apiConfig.country} onChange={handleApiChange}/>
+                <div className="input-group flex flex-col md:flex-row md:items-center md:gap-2">
+                    <label className="text-white text-[1em] font-bold">Unsplash API:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input className="border-none outline-none px-[1em] py-[0.6em] rounded-[24px] bg-white/30 text-white text-[55%] w-[260px] text-center" name="country" placeholder="Country (e.g. US)" value={apiConfig.country} onChange={handleApiChange}/>
                     <button onClick={() => window.open("https://unsplash.com/join", "_blank")}>?</button>
                 </div>
 
-                <button className="save-button" onClick={saveApiConfig}>Save</button>
+                <button className="m-2 rounded-full border-none h-[31px] w-[50px] bg-[#545454] text-white cursor-pointer transition-all duration-200 ease-in-out hover:bg-white/75" onClick={saveApiConfig}>Save</button>
             </div>
         </div>
     );

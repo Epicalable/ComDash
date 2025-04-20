@@ -2,9 +2,11 @@ body {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: auto;
     justify-content: center;
     align-items: center;
     height: 90vh;
+    background-color: black;
     margin: 0;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -43,27 +45,6 @@ body {
     font-size: 24px;
     display: block;
   }
-  .baricons {
-    left: 4px;
-    position: relative;
-    top: -40px;
-  }
-  
-  img.comicon {
-    position: relative;
-    height: 50px;
-    width: 50px;
-    left: 4px;
-}
-  div#Dashbutton,
-  div#Setbutton {
-    left: -2px;
-    position: relative;
-  }
-  .baraboutus {
-    bottom: 40px;
-    position: absolute;
-  }
 
 .input-group {
     display: flex;
@@ -98,17 +79,45 @@ body {
     background: rgba(255, 255, 255, 0.749);
 }
 
-.save-button {
-    margin: 0.5em;
-    border-radius: 50%;
-    border: none;
-    height: 31px;
-    width: 50px;
-    background: #545454;
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out 0s;
+.react-calendar__month-view__days {
+  height: 330px;
 }
-.save-button:hover {
-    background: rgba(255, 255, 255, 0.749);
+
+button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__prev-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__label {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__next-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__next2-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+button.react-calendar__tile.react-calendar__month-view__days__day {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.react-calendar__month-view__weekdays {
+  color: white;
 }
